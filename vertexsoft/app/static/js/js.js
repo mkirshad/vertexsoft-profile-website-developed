@@ -151,12 +151,12 @@ var uploadFileText = 'Drop your file here or click to select file';
 		loop: true,
 		margin: 0,
 		autoplay: true,
-		autoplayTimeout: 4000,
-		autoplayHoverPause: false,
+		autoplayTimeout: 5000,
+		autoplayHoverPause: true,
 		nav: true,
 		navText: [],
 		smartSpeed: 800,
-		mouseDrag: false
+		mouseDrag: true
 	});
 	
 	owl.on('changed.owl.carousel', function () {
