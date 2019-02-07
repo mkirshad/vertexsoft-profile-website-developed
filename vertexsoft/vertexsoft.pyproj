@@ -55,6 +55,8 @@
     <Folder Include="vertexsoft\" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="app\templates\app\blog.html" />
+    <Content Include="app\templates\app\blog_pen_of_cto_duty_vs_making_money.html" />
     <Content Include="requirements.txt" />
     <Content Include="db.sqlite3" />
     <Content Include="app\static\app\content\bootstrap.css" />
