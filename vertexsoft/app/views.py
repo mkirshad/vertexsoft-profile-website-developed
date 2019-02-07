@@ -19,6 +19,30 @@ def home(request):
         }
     )
 
+def blog(request):
+    """Renders the home page."""
+    assert isinstance(request, HttpRequest)
+    return render(
+        request,
+        'app/blog.html',
+        {
+            'title':'Home Page',
+            'year':datetime.now().year,
+        }
+    )
+
+def blog_pen_of_cto_duty_vs_making_money(request):
+    """Renders the home page."""
+    assert isinstance(request, HttpRequest)
+    return render(
+        request,
+        'app/blog_pen_of_cto_duty_vs_making_money.html',
+        {
+            'title':'Home Page',
+            'year':datetime.now().year,
+        }
+    )
+
 def contact(request):
     """Renders the contact page."""
     assert isinstance(request, HttpRequest)

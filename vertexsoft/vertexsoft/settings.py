@@ -133,3 +133,11 @@ STATIC_ROOT = posixpath.join(*(BASE_DIR.split(os.path.sep) + ['static']))
 
 CORS_ORIGIN_ALLOW_ALL= True
 X_FRAME_OPTIONS = 'ALLOW-FROM https://www.facebook.com'
+
+
+# Keep our policy as strict as possible
+#CSP_DEFAULT_SRC = ("'none'",)
+#CSP_STYLE_SRC = ("'self'", 'https://www.facebook.com')
+#CSP_SCRIPT_SRC = ("'self'",)
+#CSP_FONT_SRC = ("'self'", 'https://www.facebook.com')
+#CSP_IMG_SRC = ("'self'",)

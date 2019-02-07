@@ -1,4 +1,6 @@
 ﻿{% load staticfiles %}
+
+
 <!DOCTYPE HTML>
 <html>
 <head>
@@ -8,7 +10,7 @@
 new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
 j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-})(window,document,'script','dataLayer','GTM-NKWFMVF');</script>
+})(window,document,'script','dataLayer','GTM-WNDMLBM');</script>
 <!-- End Google Tag Manager -->
 
 <!-- Global site tag (gtag.js) - Google Analytics -->
@@ -20,9 +22,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 
   gtag('config', 'UA-133810635-1');
 </script>
-<!-- End Global Google Tag Manager -->
-
-
+<!-- End Google Analytics -->
 <!--[if lt IE 9]>
     <script>
     	alert("IE8 Please upgrade your browser");
@@ -60,9 +60,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 <script type="text/javascript" src="{% static 'js/jquery.stellar.min.js' %}"></script>
 <script type="text/javascript" src="{% static 'js/waypoints.min.js' %}"></script>
 <script type="text/javascript" src="{% static 'js/jquery.nicescroll.min.js' %}"></script>
-<script>
-    var message = '<?php echo $message ?>';
-</script>
+
 <script type="text/javascript" src="{% static 'js/js.js' %}"></script>
 <script src="{% static 'js/jquery.label_better.js' %}" type="text/javascript"></script>
 
@@ -73,14 +71,15 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 </head>
 
 <body>
+
 <!-- Google Tag Manager (noscript) -->
-<noscript>
-<iframe src="https://www.googletagmanager.com/ns.html?id=GTM-NKWFMVF" height="0" width="0" style="display:none;visibility:hidden"></iframe>
-</noscript>
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-WNDMLBM"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 <!-- End Google Tag Manager (noscript) -->
+
 <div class="menu">
   <div class="container clearfix">
-    <div id="logo" class="fleft"> <a href="" data-slide="1" class="button"><img src="{% static 'images/logo.png' %}" alt="logo"/></a> </div>
+    <div id="logo" class="fleft"> <a href="/" data-slide="1" class="button"><img src="{% static 'images/logo.png' %}" alt="logo"/></a> </div>
     <div id="nav" class="fright">
       <ul class="navigation">
         <li data-slide="1"><i class="home"></i><span>Home</span></li>
@@ -187,7 +186,7 @@ skyrocket your business to new heights</p>
   <div id="about23" class="container clearfix">
     <div id="contenet">
       <div class="grid_12">
-        <h1>Latest Success Story</h1>
+        <h1 id="latest-sccess-story">Latest Success Story</h1>
 <p>
 We have successfully developed and delivered AMI Cloud Service for Vertex Electronics. It was a giant project which started from communication of Server with the energy meter using DLMS / COSEM standards and it was included Web Interface, Web Services exposed to outer world, Business Intelligence and Mobile Native Apps. We successfully meet the time, quality and budget constraints of the projects. They key factors in our success were following:
 <br />1).    A Dedicated Team comprised of heterogeneous skills from Development, Research to Project Management. In our team we prefer highly skilled, talented, competent, expert and specialized professionals of the leading universities of Pakistan.
@@ -307,11 +306,38 @@ We have successfully developed and delivered AMI Cloud Service for Vertex Electr
 
   <div id="footer">
     <div class="container clearfix">
-        <div class="copyright">&copy; 2015 - 2019 Vertex Soft, All rights reserved. </div>
+        <div class="copyright">&copy; 2015 - 2019 Vertex Soft, All rights reserved. 		&nbsp;&nbsp;&nbsp;&nbsp;<b><a class="blog" title="Vertex Blog" href="/blog" >Vertex Blog</a></b> </div>
+
         <div id="back_top"><a class="button" title="" data-slide="1">Back to top</a></div>
     </div>
   </div>
 
+    <!-- Load Facebook SDK for JavaScript Start -->
+        <!-- Load Facebook SDK for JavaScript -->
+        <div id="fb-root"></div>
+        <script>
+          window.fbAsyncInit = function() {
+            FB.init({
+              xfbml            : true,
+              version          : 'v3.2'
+            });
+          };
 
+          (function(d, s, id) {
+          var js, fjs = d.getElementsByTagName(s)[0];
+          if (d.getElementById(id)) return;
+          js = d.createElement(s); js.id = id;
+          js.src = 'https://connect.facebook.net/en_US/sdk/xfbml.customerchat.js';
+          fjs.parentNode.insertBefore(js, fjs);
+        }(document, 'script', 'facebook-jssdk'));</script>
+
+        <!-- Your customer chat code -->
+        <div class="fb-customerchat"
+          attribution=setup_tool
+          page_id="453196238549728"
+          logged_in_greeting="Your inquiry, please?"
+          logged_out_greeting="Thank you for contacting us?">
+        </div>
+ <!-- Load Facebook SDK for JavaScript End -->
 </body>
 </html>
