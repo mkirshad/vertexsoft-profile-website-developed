@@ -43,6 +43,18 @@ def blog_pen_of_cto_duty_vs_making_money(request):
         }
     )
 
+def blog_technology_about_python(request):
+    """Renders the home page."""
+    assert isinstance(request, HttpRequest)
+    return render(
+        request,
+        'app/about_python.html',
+        {
+            'title':'Home Page',
+            'year':datetime.now().year,
+        }
+    )
+
 def contact(request):
     """Renders the contact page."""
     assert isinstance(request, HttpRequest)

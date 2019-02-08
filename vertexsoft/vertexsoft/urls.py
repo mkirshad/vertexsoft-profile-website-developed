@@ -18,6 +18,7 @@ urlpatterns = [
     # Examples:
     url(r'^$', app.views.home, name='home'),
     url(r'^blog$', app.views.blog, name='blog'),
+    url(r'^blog/technology/about_python', app.views.blog_technology_about_python, name='blog_technology_about_python'),
     url(r'^blog/pen_of_cto/duty_vs_making_money$', app.views.blog_pen_of_cto_duty_vs_making_money, name='blog_pen_of_cto_duty_vs_making_money'),
 
     url(r'^contact$', app.views.contact, name='contact'),
