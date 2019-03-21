@@ -54,6 +54,18 @@ def blog_technology_about_python(request):
             'year':datetime.now().year,
         }
     )
+	
+def blog_technology_about_django(request):
+    """Renders the home page."""
+    assert isinstance(request, HttpRequest)
+    return render(
+        request,
+        'app/about_django.html',
+        {
+            'title':'Home Page',
+            'year':datetime.now().year,
+        }
+    )
 
 def contact(request):
     """Renders the contact page."""
