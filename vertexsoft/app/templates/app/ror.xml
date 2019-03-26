@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:ror="http://rorweb.com/0.1/" >
+<channel>
+  <title>ROR Sitemap for http://www.vertexsoft.net/</title>
+  <link>http://www.vertexsoft.net/</link>
+
+<item>
+     <link>http://www.vertexsoft.net/</link>
+     <title>Vertex Soft</title>
+     <description>Vertex Soft is a Software Services Company. There is no unlimited time or budget allocated for a single project. We help our clients to deliver their software projects/solutions within their Time and Budget.</description>
+     <ror:updatePeriod></ror:updatePeriod>
+     <ror:sortOrder>0</ror:sortOrder>
+     <ror:resourceOf>sitemap</ror:resourceOf>
+</item>
+<item>
+     <link>http://www.vertexsoft.net/blog</link>
+     <title>Vertex Blog</title>
+     <description>Vertex Blog</description>
+     <ror:updatePeriod></ror:updatePeriod>
+     <ror:sortOrder>1</ror:sortOrder>
+     <ror:resourceOf>sitemap</ror:resourceOf>
+</item>
+<item>
+     <link>http://www.vertexsoft.net/blog/technology/about_python</link>
+     <title>Vertex Soft &amp;gt; Blog &amp;gt; Technology &amp;gt; About Python</title>
+     <description>Vertex Soft &amp;gt; Blog &amp;gt; Technology &amp;gt; About Python</description>
+     <ror:updatePeriod></ror:updatePeriod>
+     <ror:sortOrder>2</ror:sortOrder>
+     <ror:resourceOf>sitemap</ror:resourceOf>
+</item>
+<item>
+     <link>http://www.vertexsoft.net/blog/technology/about_django</link>
+     <title>Vertex Soft &amp;gt; Blog &amp;gt; Technology &amp;gt; About Django</title>
+     <description>Vertex Soft &amp;gt; Blog &amp;gt; Technology &amp;gt; About Django</description>
+     <ror:updatePeriod></ror:updatePeriod>
+     <ror:sortOrder>2</ror:sortOrder>
+     <ror:resourceOf>sitemap</ror:resourceOf>
+</item>
+</channel>
+</rss>
+  

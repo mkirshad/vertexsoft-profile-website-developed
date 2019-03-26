@@ -92,3 +92,83 @@ def about(request):
             'year':datetime.now().year,
         }
     )
+
+def key1(request):
+    """Renders the home page."""
+    assert isinstance(request, HttpRequest)
+    return render(
+        request,
+        'app/8DRUUDFC56WoAcrdKfXQqjFdQ3bPKUuSPMs6RDElw-g',
+        {
+            'title':'Home Page',
+            'year':datetime.now().year,
+        }
+    )
+
+def key2(request):
+    """Renders the home page."""
+    assert isinstance(request, HttpRequest)
+    return render(
+        request,
+        'app/jMK7_1NA53BuZrouaet2fufEzSjzoaocLVWTOVLaKdk',
+        {
+            'title':'Home Page',
+            'year':datetime.now().year,
+        }
+    )
+
+def ror_xml(request):
+    """Renders the home page."""
+    assert isinstance(request, HttpRequest)
+    return render(
+        request,
+        'app/ror.xml',
+        {
+            'title':'Home Page',
+            'year':datetime.now().year,
+        }
+    )
+def sitemap_html(request):
+    """Renders the home page."""
+    assert isinstance(request, HttpRequest)
+    return render(
+        request,
+        'app/sitemap.html',
+        {
+            'title':'Home Page',
+            'year':datetime.now().year,
+        }
+    )
+def sitemap_xml(request):
+    """Renders the home page."""
+    assert isinstance(request, HttpRequest)
+    return render(
+        request,
+        'app/sitemap.xml',
+        {
+            'title':'Home Page',
+            'year':datetime.now().year,
+        }
+    )
+def sitemap_xml_gz(request):
+    """Renders the home page."""
+    assert isinstance(request, HttpRequest)
+    return render(
+        request,
+        'app/sitemap.xml.gz',
+        {
+            'title':'Home Page',
+            'year':datetime.now().year,
+        }
+    )
+def urllist_txt(request):
+    """Renders the home page."""
+    assert isinstance(request, HttpRequest)
+    return render(
+        request,
+        'app/urllist.txt',
+        {
+            'title':'Home Page',
+            'year':datetime.now().year,
+        }
+    )

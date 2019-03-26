@@ -1,0 +1,4 @@
+http://www.vertexsoft.net/
+http://www.vertexsoft.net/blog
+http://www.vertexsoft.net/blog/technology/about_python
+http://www.vertexsoft.net/blog/technology/about_django
