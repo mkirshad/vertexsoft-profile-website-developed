@@ -1,1647 +1,239 @@
-{% load staticfiles %}
-
-<html xmlns:v="urn:schemas-microsoft-com:vml"
-xmlns:o="urn:schemas-microsoft-com:office:office"
-xmlns:w="urn:schemas-microsoft-com:office:word"
-xmlns:m="http://schemas.microsoft.com/office/2004/12/omml"
-xmlns="http://www.w3.org/TR/REC-html40">
-
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<html>
 <head>
-<meta http-equiv=Content-Type content="text/html; charset=windows-1252">
-<meta name=ProgId content=Word.Document>
-<meta name=Generator content="Microsoft Word 15">
-<meta name=Originator content="Microsoft Word 15">
-<link rel=File-List href="about_python_files/filelist.xml">
-<link rel=Edit-Time-Data href="about_python_files/editdata.mso">
-<!--[if !mso]>
-<style>
-v\:* {behavior:url(#default#VML);}
-o\:* {behavior:url(#default#VML);}
-w\:* {behavior:url(#default#VML);}
-.shape {behavior:url(#default#VML);}
-</style>
-<![endif]-->
-<title>Vertex Soft &gt; Blog &gt; Technology &gt; About Python</title>
-<link rel="shortcut icon" href="{% static 'favicon.ico' %}" type="image/x-icon">
-<link rel=themeData href="about_python_files/themedata.thmx">
-<link rel=colorSchemeMapping href="about_python_files/colorschememapping.xml">
-<!--[if gte mso 9]><xml>
- <w:WordDocument>
-  <w:SpellingState>Clean</w:SpellingState>
-  <w:GrammarState>Clean</w:GrammarState>
-  <w:TrackMoves>false</w:TrackMoves>
-  <w:TrackFormatting/>
-  <w:ValidateAgainstSchemas/>
-  <w:SaveIfXMLInvalid>false</w:SaveIfXMLInvalid>
-  <w:IgnoreMixedContent>false</w:IgnoreMixedContent>
-  <w:AlwaysShowPlaceholderText>false</w:AlwaysShowPlaceholderText>
-  <w:DoNotPromoteQF/>
-  <w:LidThemeOther>en-PK</w:LidThemeOther>
-  <w:LidThemeAsian>X-NONE</w:LidThemeAsian>
-  <w:LidThemeComplexScript>X-NONE</w:LidThemeComplexScript>
-  <w:Compatibility>
-   <w:BreakWrappedTables/>
-   <w:SplitPgBreakAndParaMark/>
-  </w:Compatibility>
-  <w:BrowserLevel>MicrosoftInternetExplorer4</w:BrowserLevel>
-  <m:mathPr>
-   <m:mathFont m:val="Cambria Math"/>
-   <m:brkBin m:val="before"/>
-   <m:brkBinSub m:val="&#45;-"/>
-   <m:smallFrac m:val="off"/>
-   <m:dispDef/>
-   <m:lMargin m:val="0"/>
-   <m:rMargin m:val="0"/>
-   <m:defJc m:val="centerGroup"/>
-   <m:wrapIndent m:val="1440"/>
-   <m:intLim m:val="subSup"/>
-   <m:naryLim m:val="undOvr"/>
-  </m:mathPr></w:WordDocument>
-</xml><![endif]--><!--[if gte mso 9]><xml>
- <w:LatentStyles DefLockedState="false" DefUnhideWhenUsed="false"
-  DefSemiHidden="false" DefQFormat="false" DefPriority="99"
-  LatentStyleCount="375">
-  <w:LsdException Locked="false" Priority="0" QFormat="true" Name="Normal"/>
-  <w:LsdException Locked="false" Priority="9" QFormat="true" Name="heading 1"/>
-  <w:LsdException Locked="false" Priority="9" QFormat="true" Name="heading 2"/>
-  <w:LsdException Locked="false" Priority="9" QFormat="true" Name="heading 3"/>
-  <w:LsdException Locked="false" Priority="9" SemiHidden="true"
-   UnhideWhenUsed="true" QFormat="true" Name="heading 4"/>
-  <w:LsdException Locked="false" Priority="9" SemiHidden="true"
-   UnhideWhenUsed="true" QFormat="true" Name="heading 5"/>
-  <w:LsdException Locked="false" Priority="9" SemiHidden="true"
-   UnhideWhenUsed="true" QFormat="true" Name="heading 6"/>
-  <w:LsdException Locked="false" Priority="9" SemiHidden="true"
-   UnhideWhenUsed="true" QFormat="true" Name="heading 7"/>
-  <w:LsdException Locked="false" Priority="9" SemiHidden="true"
-   UnhideWhenUsed="true" QFormat="true" Name="heading 8"/>
-  <w:LsdException Locked="false" Priority="9" SemiHidden="true"
-   UnhideWhenUsed="true" QFormat="true" Name="heading 9"/>
-  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
-   Name="index 1"/>
-  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
-   Name="index 2"/>
-  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
-   Name="index 3"/>
-  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
-   Name="index 4"/>
-  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
-   Name="index 5"/>
-  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
-   Name="index 6"/>
-  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
-   Name="index 7"/>
-  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
-   Name="index 8"/>
-  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
-   Name="index 9"/>
-  <w:LsdException Locked="false" Priority="39" SemiHidden="true"
-   UnhideWhenUsed="true" Name="toc 1"/>
-  <w:LsdException Locked="false" Priority="39" SemiHidden="true"
-   UnhideWhenUsed="true" Name="toc 2"/>
-  <w:LsdException Locked="false" Priority="39" SemiHidden="true"
-   UnhideWhenUsed="true" Name="toc 3"/>
-  <w:LsdException Locked="false" Priority="39" SemiHidden="true"
-   UnhideWhenUsed="true" Name="toc 4"/>
-  <w:LsdException Locked="false" Priority="39" SemiHidden="true"
-   UnhideWhenUsed="true" Name="toc 5"/>
-  <w:LsdException Locked="false" Priority="39" SemiHidden="true"
-   UnhideWhenUsed="true" Name="toc 6"/>
-  <w:LsdException Locked="false" Priority="39" SemiHidden="true"
-   UnhideWhenUsed="true" Name="toc 7"/>
-  <w:LsdException Locked="false" Priority="39" SemiHidden="true"
-   UnhideWhenUsed="true" Name="toc 8"/>
-  <w:LsdException Locked="false" Priority="39" SemiHidden="true"
-   UnhideWhenUsed="true" Name="toc 9"/>
-  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
-   Name="Normal Indent"/>
-  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
-   Name="footnote text"/>
-  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
-   Name="annotation text"/>
-  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
-   Name="header"/>
-  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
-   Name="footer"/>
-  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
-   Name="index heading"/>
-  <w:LsdException Locked="false" Priority="35" QFormat="true" Name="caption"/>
-  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
-   Name="table of figures"/>
-  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
-   Name="envelope address"/>
-  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
-   Name="envelope return"/>
-  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
-   Name="footnote reference"/>
-  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
-   Name="annotation reference"/>
-  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
-   Name="line number"/>
-  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
-   Name="page number"/>
-  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
-   Name="endnote reference"/>
-  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
-   Name="endnote text"/>
-  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
-   Name="table of authorities"/>
-  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
-   Name="macro"/>
-  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
-   Name="toa heading"/>
-  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
-   Name="List"/>
-  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
-   Name="List Bullet"/>
-  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
-   Name="List Number"/>
-  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
-   Name="List 2"/>
-  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
-   Name="List 3"/>
-  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
-   Name="List 4"/>
-  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
-   Name="List 5"/>
-  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
-   Name="List Bullet 2"/>
-  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
-   Name="List Bullet 3"/>
-  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
-   Name="List Bullet 4"/>
-  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
-   Name="List Bullet 5"/>
-  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
-   Name="List Number 2"/>
-  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
-   Name="List Number 3"/>
-  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
-   Name="List Number 4"/>
-  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
-   Name="List Number 5"/>
-  <w:LsdException Locked="false" Priority="10" QFormat="true" Name="Title"/>
-  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
-   Name="Closing"/>
-  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
-   Name="Signature"/>
-  <w:LsdException Locked="false" Priority="1" SemiHidden="true"
-   UnhideWhenUsed="true" Name="Default Paragraph Font"/>
-  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
-   Name="Body Text"/>
-  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
-   Name="Body Text Indent"/>
-  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
-   Name="List Continue"/>
-  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
-   Name="List Continue 2"/>
-  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
-   Name="List Continue 3"/>
-  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
-   Name="List Continue 4"/>
-  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
-   Name="List Continue 5"/>
-  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
-   Name="Message Header"/>
-  <w:LsdException Locked="false" Priority="11" QFormat="true" Name="Subtitle"/>
-  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
-   Name="Salutation"/>
-  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
-   Name="Date"/>
-  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
-   Name="Body Text First Indent"/>
-  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
-   Name="Body Text First Indent 2"/>
-  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
-   Name="Note Heading"/>
-  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
-   Name="Body Text 2"/>
-  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
-   Name="Body Text 3"/>
-  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
-   Name="Body Text Indent 2"/>
-  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
-   Name="Body Text Indent 3"/>
-  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
-   Name="Block Text"/>
-  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
-   Name="Hyperlink"/>
-  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
-   Name="FollowedHyperlink"/>
-  <w:LsdException Locked="false" Priority="22" QFormat="true" Name="Strong"/>
-  <w:LsdException Locked="false" Priority="20" QFormat="true" Name="Emphasis"/>
-  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
-   Name="Document Map"/>
-  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
-   Name="Plain Text"/>
-  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
-   Name="E-mail Signature"/>
-  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
-   Name="HTML Top of Form"/>
-  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
-   Name="HTML Bottom of Form"/>
-  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
-   Name="Normal (Web)"/>
-  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
-   Name="HTML Acronym"/>
-  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
-   Name="HTML Address"/>
-  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
-   Name="HTML Cite"/>
-  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
-   Name="HTML Code"/>
-  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
-   Name="HTML Definition"/>
-  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
-   Name="HTML Keyboard"/>
-  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
-   Name="HTML Preformatted"/>
-  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
-   Name="HTML Sample"/>
-  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
-   Name="HTML Typewriter"/>
-  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
-   Name="HTML Variable"/>
-  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
-   Name="Normal Table"/>
-  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
-   Name="annotation subject"/>
-  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
-   Name="No List"/>
-  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
-   Name="Outline List 1"/>
-  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
-   Name="Outline List 2"/>
-  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
-   Name="Outline List 3"/>
-  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
-   Name="Table Simple 1"/>
-  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
-   Name="Table Simple 2"/>
-  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
-   Name="Table Simple 3"/>
-  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
-   Name="Table Classic 1"/>
-  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
-   Name="Table Classic 2"/>
-  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
-   Name="Table Classic 3"/>
-  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
-   Name="Table Classic 4"/>
-  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
-   Name="Table Colorful 1"/>
-  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
-   Name="Table Colorful 2"/>
-  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
-   Name="Table Colorful 3"/>
-  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
-   Name="Table Columns 1"/>
-  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
-   Name="Table Columns 2"/>
-  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
-   Name="Table Columns 3"/>
-  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
-   Name="Table Columns 4"/>
-  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
-   Name="Table Columns 5"/>
-  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
-   Name="Table Grid 1"/>
-  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
-   Name="Table Grid 2"/>
-  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
-   Name="Table Grid 3"/>
-  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
-   Name="Table Grid 4"/>
-  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
-   Name="Table Grid 5"/>
-  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
-   Name="Table Grid 6"/>
-  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
-   Name="Table Grid 7"/>
-  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
-   Name="Table Grid 8"/>
-  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
-   Name="Table List 1"/>
-  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
-   Name="Table List 2"/>
-  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
-   Name="Table List 3"/>
-  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
-   Name="Table List 4"/>
-  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
-   Name="Table List 5"/>
-  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
-   Name="Table List 6"/>
-  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
-   Name="Table List 7"/>
-  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
-   Name="Table List 8"/>
-  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
-   Name="Table 3D effects 1"/>
-  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
-   Name="Table 3D effects 2"/>
-  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
-   Name="Table 3D effects 3"/>
-  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
-   Name="Table Contemporary"/>
-  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
-   Name="Table Elegant"/>
-  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
-   Name="Table Professional"/>
-  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
-   Name="Table Subtle 1"/>
-  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
-   Name="Table Subtle 2"/>
-  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
-   Name="Table Web 1"/>
-  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
-   Name="Table Web 2"/>
-  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
-   Name="Table Web 3"/>
-  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
-   Name="Balloon Text"/>
-  <w:LsdException Locked="false" Priority="39" Name="Table Grid"/>
-  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
-   Name="Table Theme"/>
-  <w:LsdException Locked="false" SemiHidden="true" Name="Placeholder Text"/>
-  <w:LsdException Locked="false" Priority="1" QFormat="true" Name="No Spacing"/>
-  <w:LsdException Locked="false" Priority="60" Name="Light Shading"/>
-  <w:LsdException Locked="false" Priority="61" Name="Light List"/>
-  <w:LsdException Locked="false" Priority="62" Name="Light Grid"/>
-  <w:LsdException Locked="false" Priority="63" Name="Medium Shading 1"/>
-  <w:LsdException Locked="false" Priority="64" Name="Medium Shading 2"/>
-  <w:LsdException Locked="false" Priority="65" Name="Medium List 1"/>
-  <w:LsdException Locked="false" Priority="66" Name="Medium List 2"/>
-  <w:LsdException Locked="false" Priority="67" Name="Medium Grid 1"/>
-  <w:LsdException Locked="false" Priority="68" Name="Medium Grid 2"/>
-  <w:LsdException Locked="false" Priority="69" Name="Medium Grid 3"/>
-  <w:LsdException Locked="false" Priority="70" Name="Dark List"/>
-  <w:LsdException Locked="false" Priority="71" Name="Colorful Shading"/>
-  <w:LsdException Locked="false" Priority="72" Name="Colorful List"/>
-  <w:LsdException Locked="false" Priority="73" Name="Colorful Grid"/>
-  <w:LsdException Locked="false" Priority="60" Name="Light Shading Accent 1"/>
-  <w:LsdException Locked="false" Priority="61" Name="Light List Accent 1"/>
-  <w:LsdException Locked="false" Priority="62" Name="Light Grid Accent 1"/>
-  <w:LsdException Locked="false" Priority="63" Name="Medium Shading 1 Accent 1"/>
-  <w:LsdException Locked="false" Priority="64" Name="Medium Shading 2 Accent 1"/>
-  <w:LsdException Locked="false" Priority="65" Name="Medium List 1 Accent 1"/>
-  <w:LsdException Locked="false" SemiHidden="true" Name="Revision"/>
-  <w:LsdException Locked="false" Priority="34" QFormat="true"
-   Name="List Paragraph"/>
-  <w:LsdException Locked="false" Priority="29" QFormat="true" Name="Quote"/>
-  <w:LsdException Locked="false" Priority="30" QFormat="true"
-   Name="Intense Quote"/>
-  <w:LsdException Locked="false" Priority="66" Name="Medium List 2 Accent 1"/>
-  <w:LsdException Locked="false" Priority="67" Name="Medium Grid 1 Accent 1"/>
-  <w:LsdException Locked="false" Priority="68" Name="Medium Grid 2 Accent 1"/>
-  <w:LsdException Locked="false" Priority="69" Name="Medium Grid 3 Accent 1"/>
-  <w:LsdException Locked="false" Priority="70" Name="Dark List Accent 1"/>
-  <w:LsdException Locked="false" Priority="71" Name="Colorful Shading Accent 1"/>
-  <w:LsdException Locked="false" Priority="72" Name="Colorful List Accent 1"/>
-  <w:LsdException Locked="false" Priority="73" Name="Colorful Grid Accent 1"/>
-  <w:LsdException Locked="false" Priority="60" Name="Light Shading Accent 2"/>
-  <w:LsdException Locked="false" Priority="61" Name="Light List Accent 2"/>
-  <w:LsdException Locked="false" Priority="62" Name="Light Grid Accent 2"/>
-  <w:LsdException Locked="false" Priority="63" Name="Medium Shading 1 Accent 2"/>
-  <w:LsdException Locked="false" Priority="64" Name="Medium Shading 2 Accent 2"/>
-  <w:LsdException Locked="false" Priority="65" Name="Medium List 1 Accent 2"/>
-  <w:LsdException Locked="false" Priority="66" Name="Medium List 2 Accent 2"/>
-  <w:LsdException Locked="false" Priority="67" Name="Medium Grid 1 Accent 2"/>
-  <w:LsdException Locked="false" Priority="68" Name="Medium Grid 2 Accent 2"/>
-  <w:LsdException Locked="false" Priority="69" Name="Medium Grid 3 Accent 2"/>
-  <w:LsdException Locked="false" Priority="70" Name="Dark List Accent 2"/>
-  <w:LsdException Locked="false" Priority="71" Name="Colorful Shading Accent 2"/>
-  <w:LsdException Locked="false" Priority="72" Name="Colorful List Accent 2"/>
-  <w:LsdException Locked="false" Priority="73" Name="Colorful Grid Accent 2"/>
-  <w:LsdException Locked="false" Priority="60" Name="Light Shading Accent 3"/>
-  <w:LsdException Locked="false" Priority="61" Name="Light List Accent 3"/>
-  <w:LsdException Locked="false" Priority="62" Name="Light Grid Accent 3"/>
-  <w:LsdException Locked="false" Priority="63" Name="Medium Shading 1 Accent 3"/>
-  <w:LsdException Locked="false" Priority="64" Name="Medium Shading 2 Accent 3"/>
-  <w:LsdException Locked="false" Priority="65" Name="Medium List 1 Accent 3"/>
-  <w:LsdException Locked="false" Priority="66" Name="Medium List 2 Accent 3"/>
-  <w:LsdException Locked="false" Priority="67" Name="Medium Grid 1 Accent 3"/>
-  <w:LsdException Locked="false" Priority="68" Name="Medium Grid 2 Accent 3"/>
-  <w:LsdException Locked="false" Priority="69" Name="Medium Grid 3 Accent 3"/>
-  <w:LsdException Locked="false" Priority="70" Name="Dark List Accent 3"/>
-  <w:LsdException Locked="false" Priority="71" Name="Colorful Shading Accent 3"/>
-  <w:LsdException Locked="false" Priority="72" Name="Colorful List Accent 3"/>
-  <w:LsdException Locked="false" Priority="73" Name="Colorful Grid Accent 3"/>
-  <w:LsdException Locked="false" Priority="60" Name="Light Shading Accent 4"/>
-  <w:LsdException Locked="false" Priority="61" Name="Light List Accent 4"/>
-  <w:LsdException Locked="false" Priority="62" Name="Light Grid Accent 4"/>
-  <w:LsdException Locked="false" Priority="63" Name="Medium Shading 1 Accent 4"/>
-  <w:LsdException Locked="false" Priority="64" Name="Medium Shading 2 Accent 4"/>
-  <w:LsdException Locked="false" Priority="65" Name="Medium List 1 Accent 4"/>
-  <w:LsdException Locked="false" Priority="66" Name="Medium List 2 Accent 4"/>
-  <w:LsdException Locked="false" Priority="67" Name="Medium Grid 1 Accent 4"/>
-  <w:LsdException Locked="false" Priority="68" Name="Medium Grid 2 Accent 4"/>
-  <w:LsdException Locked="false" Priority="69" Name="Medium Grid 3 Accent 4"/>
-  <w:LsdException Locked="false" Priority="70" Name="Dark List Accent 4"/>
-  <w:LsdException Locked="false" Priority="71" Name="Colorful Shading Accent 4"/>
-  <w:LsdException Locked="false" Priority="72" Name="Colorful List Accent 4"/>
-  <w:LsdException Locked="false" Priority="73" Name="Colorful Grid Accent 4"/>
-  <w:LsdException Locked="false" Priority="60" Name="Light Shading Accent 5"/>
-  <w:LsdException Locked="false" Priority="61" Name="Light List Accent 5"/>
-  <w:LsdException Locked="false" Priority="62" Name="Light Grid Accent 5"/>
-  <w:LsdException Locked="false" Priority="63" Name="Medium Shading 1 Accent 5"/>
-  <w:LsdException Locked="false" Priority="64" Name="Medium Shading 2 Accent 5"/>
-  <w:LsdException Locked="false" Priority="65" Name="Medium List 1 Accent 5"/>
-  <w:LsdException Locked="false" Priority="66" Name="Medium List 2 Accent 5"/>
-  <w:LsdException Locked="false" Priority="67" Name="Medium Grid 1 Accent 5"/>
-  <w:LsdException Locked="false" Priority="68" Name="Medium Grid 2 Accent 5"/>
-  <w:LsdException Locked="false" Priority="69" Name="Medium Grid 3 Accent 5"/>
-  <w:LsdException Locked="false" Priority="70" Name="Dark List Accent 5"/>
-  <w:LsdException Locked="false" Priority="71" Name="Colorful Shading Accent 5"/>
-  <w:LsdException Locked="false" Priority="72" Name="Colorful List Accent 5"/>
-  <w:LsdException Locked="false" Priority="73" Name="Colorful Grid Accent 5"/>
-  <w:LsdException Locked="false" Priority="60" Name="Light Shading Accent 6"/>
-  <w:LsdException Locked="false" Priority="61" Name="Light List Accent 6"/>
-  <w:LsdException Locked="false" Priority="62" Name="Light Grid Accent 6"/>
-  <w:LsdException Locked="false" Priority="63" Name="Medium Shading 1 Accent 6"/>
-  <w:LsdException Locked="false" Priority="64" Name="Medium Shading 2 Accent 6"/>
-  <w:LsdException Locked="false" Priority="65" Name="Medium List 1 Accent 6"/>
-  <w:LsdException Locked="false" Priority="66" Name="Medium List 2 Accent 6"/>
-  <w:LsdException Locked="false" Priority="67" Name="Medium Grid 1 Accent 6"/>
-  <w:LsdException Locked="false" Priority="68" Name="Medium Grid 2 Accent 6"/>
-  <w:LsdException Locked="false" Priority="69" Name="Medium Grid 3 Accent 6"/>
-  <w:LsdException Locked="false" Priority="70" Name="Dark List Accent 6"/>
-  <w:LsdException Locked="false" Priority="71" Name="Colorful Shading Accent 6"/>
-  <w:LsdException Locked="false" Priority="72" Name="Colorful List Accent 6"/>
-  <w:LsdException Locked="false" Priority="73" Name="Colorful Grid Accent 6"/>
-  <w:LsdException Locked="false" Priority="19" QFormat="true"
-   Name="Subtle Emphasis"/>
-  <w:LsdException Locked="false" Priority="21" QFormat="true"
-   Name="Intense Emphasis"/>
-  <w:LsdException Locked="false" Priority="31" QFormat="true"
-   Name="Subtle Reference"/>
-  <w:LsdException Locked="false" Priority="32" QFormat="true"
-   Name="Intense Reference"/>
-  <w:LsdException Locked="false" Priority="33" QFormat="true" Name="Book Title"/>
-  <w:LsdException Locked="false" Priority="37" SemiHidden="true"
-   UnhideWhenUsed="true" Name="Bibliography"/>
-  <w:LsdException Locked="false" Priority="39" SemiHidden="true"
-   UnhideWhenUsed="true" QFormat="true" Name="TOC Heading"/>
-  <w:LsdException Locked="false" Priority="41" Name="Plain Table 1"/>
-  <w:LsdException Locked="false" Priority="42" Name="Plain Table 2"/>
-  <w:LsdException Locked="false" Priority="43" Name="Plain Table 3"/>
-  <w:LsdException Locked="false" Priority="44" Name="Plain Table 4"/>
-  <w:LsdException Locked="false" Priority="45" Name="Plain Table 5"/>
-  <w:LsdException Locked="false" Priority="40" Name="Grid Table Light"/>
-  <w:LsdException Locked="false" Priority="46" Name="Grid Table 1 Light"/>
-  <w:LsdException Locked="false" Priority="47" Name="Grid Table 2"/>
-  <w:LsdException Locked="false" Priority="48" Name="Grid Table 3"/>
-  <w:LsdException Locked="false" Priority="49" Name="Grid Table 4"/>
-  <w:LsdException Locked="false" Priority="50" Name="Grid Table 5 Dark"/>
-  <w:LsdException Locked="false" Priority="51" Name="Grid Table 6 Colorful"/>
-  <w:LsdException Locked="false" Priority="52" Name="Grid Table 7 Colorful"/>
-  <w:LsdException Locked="false" Priority="46"
-   Name="Grid Table 1 Light Accent 1"/>
-  <w:LsdException Locked="false" Priority="47" Name="Grid Table 2 Accent 1"/>
-  <w:LsdException Locked="false" Priority="48" Name="Grid Table 3 Accent 1"/>
-  <w:LsdException Locked="false" Priority="49" Name="Grid Table 4 Accent 1"/>
-  <w:LsdException Locked="false" Priority="50" Name="Grid Table 5 Dark Accent 1"/>
-  <w:LsdException Locked="false" Priority="51"
-   Name="Grid Table 6 Colorful Accent 1"/>
-  <w:LsdException Locked="false" Priority="52"
-   Name="Grid Table 7 Colorful Accent 1"/>
-  <w:LsdException Locked="false" Priority="46"
-   Name="Grid Table 1 Light Accent 2"/>
-  <w:LsdException Locked="false" Priority="47" Name="Grid Table 2 Accent 2"/>
-  <w:LsdException Locked="false" Priority="48" Name="Grid Table 3 Accent 2"/>
-  <w:LsdException Locked="false" Priority="49" Name="Grid Table 4 Accent 2"/>
-  <w:LsdException Locked="false" Priority="50" Name="Grid Table 5 Dark Accent 2"/>
-  <w:LsdException Locked="false" Priority="51"
-   Name="Grid Table 6 Colorful Accent 2"/>
-  <w:LsdException Locked="false" Priority="52"
-   Name="Grid Table 7 Colorful Accent 2"/>
-  <w:LsdException Locked="false" Priority="46"
-   Name="Grid Table 1 Light Accent 3"/>
-  <w:LsdException Locked="false" Priority="47" Name="Grid Table 2 Accent 3"/>
-  <w:LsdException Locked="false" Priority="48" Name="Grid Table 3 Accent 3"/>
-  <w:LsdException Locked="false" Priority="49" Name="Grid Table 4 Accent 3"/>
-  <w:LsdException Locked="false" Priority="50" Name="Grid Table 5 Dark Accent 3"/>
-  <w:LsdException Locked="false" Priority="51"
-   Name="Grid Table 6 Colorful Accent 3"/>
-  <w:LsdException Locked="false" Priority="52"
-   Name="Grid Table 7 Colorful Accent 3"/>
-  <w:LsdException Locked="false" Priority="46"
-   Name="Grid Table 1 Light Accent 4"/>
-  <w:LsdException Locked="false" Priority="47" Name="Grid Table 2 Accent 4"/>
-  <w:LsdException Locked="false" Priority="48" Name="Grid Table 3 Accent 4"/>
-  <w:LsdException Locked="false" Priority="49" Name="Grid Table 4 Accent 4"/>
-  <w:LsdException Locked="false" Priority="50" Name="Grid Table 5 Dark Accent 4"/>
-  <w:LsdException Locked="false" Priority="51"
-   Name="Grid Table 6 Colorful Accent 4"/>
-  <w:LsdException Locked="false" Priority="52"
-   Name="Grid Table 7 Colorful Accent 4"/>
-  <w:LsdException Locked="false" Priority="46"
-   Name="Grid Table 1 Light Accent 5"/>
-  <w:LsdException Locked="false" Priority="47" Name="Grid Table 2 Accent 5"/>
-  <w:LsdException Locked="false" Priority="48" Name="Grid Table 3 Accent 5"/>
-  <w:LsdException Locked="false" Priority="49" Name="Grid Table 4 Accent 5"/>
-  <w:LsdException Locked="false" Priority="50" Name="Grid Table 5 Dark Accent 5"/>
-  <w:LsdException Locked="false" Priority="51"
-   Name="Grid Table 6 Colorful Accent 5"/>
-  <w:LsdException Locked="false" Priority="52"
-   Name="Grid Table 7 Colorful Accent 5"/>
-  <w:LsdException Locked="false" Priority="46"
-   Name="Grid Table 1 Light Accent 6"/>
-  <w:LsdException Locked="false" Priority="47" Name="Grid Table 2 Accent 6"/>
-  <w:LsdException Locked="false" Priority="48" Name="Grid Table 3 Accent 6"/>
-  <w:LsdException Locked="false" Priority="49" Name="Grid Table 4 Accent 6"/>
-  <w:LsdException Locked="false" Priority="50" Name="Grid Table 5 Dark Accent 6"/>
-  <w:LsdException Locked="false" Priority="51"
-   Name="Grid Table 6 Colorful Accent 6"/>
-  <w:LsdException Locked="false" Priority="52"
-   Name="Grid Table 7 Colorful Accent 6"/>
-  <w:LsdException Locked="false" Priority="46" Name="List Table 1 Light"/>
-  <w:LsdException Locked="false" Priority="47" Name="List Table 2"/>
-  <w:LsdException Locked="false" Priority="48" Name="List Table 3"/>
-  <w:LsdException Locked="false" Priority="49" Name="List Table 4"/>
-  <w:LsdException Locked="false" Priority="50" Name="List Table 5 Dark"/>
-  <w:LsdException Locked="false" Priority="51" Name="List Table 6 Colorful"/>
-  <w:LsdException Locked="false" Priority="52" Name="List Table 7 Colorful"/>
-  <w:LsdException Locked="false" Priority="46"
-   Name="List Table 1 Light Accent 1"/>
-  <w:LsdException Locked="false" Priority="47" Name="List Table 2 Accent 1"/>
-  <w:LsdException Locked="false" Priority="48" Name="List Table 3 Accent 1"/>
-  <w:LsdException Locked="false" Priority="49" Name="List Table 4 Accent 1"/>
-  <w:LsdException Locked="false" Priority="50" Name="List Table 5 Dark Accent 1"/>
-  <w:LsdException Locked="false" Priority="51"
-   Name="List Table 6 Colorful Accent 1"/>
-  <w:LsdException Locked="false" Priority="52"
-   Name="List Table 7 Colorful Accent 1"/>
-  <w:LsdException Locked="false" Priority="46"
-   Name="List Table 1 Light Accent 2"/>
-  <w:LsdException Locked="false" Priority="47" Name="List Table 2 Accent 2"/>
-  <w:LsdException Locked="false" Priority="48" Name="List Table 3 Accent 2"/>
-  <w:LsdException Locked="false" Priority="49" Name="List Table 4 Accent 2"/>
-  <w:LsdException Locked="false" Priority="50" Name="List Table 5 Dark Accent 2"/>
-  <w:LsdException Locked="false" Priority="51"
-   Name="List Table 6 Colorful Accent 2"/>
-  <w:LsdException Locked="false" Priority="52"
-   Name="List Table 7 Colorful Accent 2"/>
-  <w:LsdException Locked="false" Priority="46"
-   Name="List Table 1 Light Accent 3"/>
-  <w:LsdException Locked="false" Priority="47" Name="List Table 2 Accent 3"/>
-  <w:LsdException Locked="false" Priority="48" Name="List Table 3 Accent 3"/>
-  <w:LsdException Locked="false" Priority="49" Name="List Table 4 Accent 3"/>
-  <w:LsdException Locked="false" Priority="50" Name="List Table 5 Dark Accent 3"/>
-  <w:LsdException Locked="false" Priority="51"
-   Name="List Table 6 Colorful Accent 3"/>
-  <w:LsdException Locked="false" Priority="52"
-   Name="List Table 7 Colorful Accent 3"/>
-  <w:LsdException Locked="false" Priority="46"
-   Name="List Table 1 Light Accent 4"/>
-  <w:LsdException Locked="false" Priority="47" Name="List Table 2 Accent 4"/>
-  <w:LsdException Locked="false" Priority="48" Name="List Table 3 Accent 4"/>
-  <w:LsdException Locked="false" Priority="49" Name="List Table 4 Accent 4"/>
-  <w:LsdException Locked="false" Priority="50" Name="List Table 5 Dark Accent 4"/>
-  <w:LsdException Locked="false" Priority="51"
-   Name="List Table 6 Colorful Accent 4"/>
-  <w:LsdException Locked="false" Priority="52"
-   Name="List Table 7 Colorful Accent 4"/>
-  <w:LsdException Locked="false" Priority="46"
-   Name="List Table 1 Light Accent 5"/>
-  <w:LsdException Locked="false" Priority="47" Name="List Table 2 Accent 5"/>
-  <w:LsdException Locked="false" Priority="48" Name="List Table 3 Accent 5"/>
-  <w:LsdException Locked="false" Priority="49" Name="List Table 4 Accent 5"/>
-  <w:LsdException Locked="false" Priority="50" Name="List Table 5 Dark Accent 5"/>
-  <w:LsdException Locked="false" Priority="51"
-   Name="List Table 6 Colorful Accent 5"/>
-  <w:LsdException Locked="false" Priority="52"
-   Name="List Table 7 Colorful Accent 5"/>
-  <w:LsdException Locked="false" Priority="46"
-   Name="List Table 1 Light Accent 6"/>
-  <w:LsdException Locked="false" Priority="47" Name="List Table 2 Accent 6"/>
-  <w:LsdException Locked="false" Priority="48" Name="List Table 3 Accent 6"/>
-  <w:LsdException Locked="false" Priority="49" Name="List Table 4 Accent 6"/>
-  <w:LsdException Locked="false" Priority="50" Name="List Table 5 Dark Accent 6"/>
-  <w:LsdException Locked="false" Priority="51"
-   Name="List Table 6 Colorful Accent 6"/>
-  <w:LsdException Locked="false" Priority="52"
-   Name="List Table 7 Colorful Accent 6"/>
-  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
-   Name="Mention"/>
-  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
-   Name="Smart Hyperlink"/>
-  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
-   Name="Hashtag"/>
-  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
-   Name="Unresolved Mention"/>
- </w:LatentStyles>
-</xml><![endif]-->
-<style>
-body {
-margin-left:25px; margin-right:25px;
-}
-<!--
- /* Font Definitions */
- @font-face
-	{font-family:"Cambria Math";
-	panose-1:2 4 5 3 5 4 6 3 2 4;
-	mso-font-charset:0;
-	mso-generic-font-family:roman;
-	mso-font-pitch:variable;
-	mso-font-signature:-536869121 1107305727 33554432 0 415 0;}
-@font-face
-	{font-family:Calibri;
-	panose-1:2 15 5 2 2 2 4 3 2 4;
-	mso-font-charset:0;
-	mso-generic-font-family:swiss;
-	mso-font-pitch:variable;
-	mso-font-signature:-536859905 -1073732485 9 0 511 0;}
-@font-face
-	{font-family:"Calibri Light";
-	panose-1:2 15 3 2 2 2 4 3 2 4;
-	mso-font-charset:0;
-	mso-generic-font-family:swiss;
-	mso-font-pitch:variable;
-	mso-font-signature:-536859905 -1073732485 9 0 511 0;}
-@font-face
-	{font-family:"Liberation Serif";
-	mso-font-alt:"Times New Roman";
-	mso-font-charset:0;
-	mso-generic-font-family:auto;
-	mso-font-pitch:auto;
-	mso-font-signature:0 0 0 0 0 0;}
-@font-face
-	{font-family:"Liberation Mono";
-	mso-font-charset:0;
-	mso-generic-font-family:auto;
-	mso-font-pitch:auto;
-	mso-font-signature:0 0 0 0 0 0;}
-@font-face
-	{font-family:OpenSymbol;
-	mso-font-charset:0;
-	mso-generic-font-family:auto;
-	mso-font-pitch:auto;
-	mso-font-signature:0 0 0 0 0 0;}
-@font-face
-	{font-family:"Liberation Sans";
-	mso-font-charset:0;
-	mso-generic-font-family:auto;
-	mso-font-pitch:auto;
-	mso-font-signature:0 0 0 0 0 0;}
-@font-face
-	{font-family:NSimSun;
-	panose-1:2 1 6 9 3 1 1 1 1 1;
-	mso-font-charset:134;
-	mso-generic-font-family:modern;
-	mso-font-pitch:fixed;
-	mso-font-signature:3 680460288 22 0 262145 0;}
-@font-face
-	{font-family:"\@NSimSun";
-	mso-font-charset:134;
-	mso-generic-font-family:modern;
-	mso-font-pitch:fixed;
-	mso-font-signature:3 680460288 22 0 262145 0;}
- /* Style Definitions */
- p.MsoNormal, li.MsoNormal, div.MsoNormal
-	{mso-style-unhide:no;
-	mso-style-qformat:yes;
-	mso-style-parent:"";
-	margin:0cm;
-	margin-bottom:.0001pt;
-	mso-pagination:widow-orphan;
-	font-size:12.0pt;
-	font-family:"Liberation Serif";
-	mso-fareast-font-family:"Times New Roman";
-	mso-fareast-theme-font:minor-fareast;
-	mso-bidi-font-family:"Times New Roman";}
-h2
-	{mso-style-priority:9;
-	mso-style-unhide:no;
-	mso-style-qformat:yes;
-	mso-style-link:"Heading 2 Char";
-	margin-top:10.0pt;
-	margin-right:0cm;
-	margin-bottom:6.0pt;
-	margin-left:0cm;
-	mso-pagination:widow-orphan;
-	page-break-after:avoid;
-	mso-outline-level:2;
-	font-size:18.0pt;
-	font-family:"Liberation Serif";
-	mso-fareast-font-family:"Times New Roman";
-	mso-fareast-theme-font:minor-fareast;}
-h3
-	{mso-style-priority:9;
-	mso-style-unhide:no;
-	mso-style-qformat:yes;
-	mso-style-link:"Heading 3 Char";
-	margin-top:7.0pt;
-	margin-right:0cm;
-	margin-bottom:6.0pt;
-	margin-left:0cm;
-	mso-pagination:widow-orphan;
-	page-break-after:avoid;
-	mso-outline-level:3;
-	font-size:14.0pt;
-	font-family:"Liberation Serif";
-	mso-fareast-font-family:"Times New Roman";
-	mso-fareast-theme-font:minor-fareast;}
-p.MsoCaption, li.MsoCaption, div.MsoCaption
-	{mso-style-priority:35;
-	mso-style-unhide:no;
-	mso-style-qformat:yes;
-	margin-top:6.0pt;
-	margin-right:0cm;
-	margin-bottom:6.0pt;
-	margin-left:0cm;
-	mso-pagination:widow-orphan;
-	font-size:12.0pt;
-	font-family:"Liberation Serif";
-	mso-fareast-font-family:"Times New Roman";
-	mso-fareast-theme-font:minor-fareast;
-	mso-bidi-font-family:"Times New Roman";
-	font-style:italic;}
-p.MsoList, li.MsoList, div.MsoList
-	{mso-style-noshow:yes;
-	mso-style-priority:99;
-	margin-top:0cm;
-	margin-right:0cm;
-	margin-bottom:7.0pt;
-	margin-left:0cm;
-	line-height:115%;
-	mso-pagination:widow-orphan;
-	font-size:12.0pt;
-	font-family:"Liberation Serif";
-	mso-fareast-font-family:"Times New Roman";
-	mso-fareast-theme-font:minor-fareast;
-	mso-bidi-font-family:"Times New Roman";}
-p.MsoTitle, li.MsoTitle, div.MsoTitle
-	{mso-style-priority:10;
-	mso-style-unhide:no;
-	mso-style-qformat:yes;
-	mso-style-link:"Title Char";
-	margin:0cm;
-	margin-bottom:.0001pt;
-	mso-pagination:widow-orphan;
-	font-size:28.0pt;
-	font-family:"Calibri Light",sans-serif;
-	mso-fareast-font-family:"Times New Roman";
-	mso-fareast-theme-font:minor-fareast;
-	letter-spacing:-.5pt;}
-p.MsoBodyText, li.MsoBodyText, div.MsoBodyText
-	{mso-style-noshow:yes;
-	mso-style-priority:99;
-	mso-style-link:"Body Text Char";
-	margin-top:0cm;
-	margin-right:0cm;
-	margin-bottom:7.0pt;
-	margin-left:0cm;
-	line-height:115%;
-	mso-pagination:widow-orphan;
-	font-size:12.0pt;
-	font-family:"Liberation Serif";
-	mso-fareast-font-family:"Times New Roman";
-	mso-fareast-theme-font:minor-fareast;
-	mso-bidi-font-family:"Times New Roman";}
-a:link, span.MsoHyperlink
-	{mso-style-noshow:yes;
-	mso-style-priority:99;
-	color:#0563C1;
-	text-decoration:underline;
-	text-underline:single;}
-a:visited, span.MsoHyperlinkFollowed
-	{mso-style-noshow:yes;
-	mso-style-priority:99;
-	color:#954F72;
-	text-decoration:underline;
-	text-underline:single;}
-p.MsoListParagraph, li.MsoListParagraph, div.MsoListParagraph
-	{mso-style-priority:34;
-	mso-style-unhide:no;
-	mso-style-qformat:yes;
-	margin-top:0cm;
-	margin-right:0cm;
-	margin-bottom:0cm;
-	margin-left:36.0pt;
-	margin-bottom:.0001pt;
-	mso-pagination:widow-orphan;
-	font-size:12.0pt;
-	font-family:"Liberation Serif";
-	mso-fareast-font-family:"Times New Roman";
-	mso-fareast-theme-font:minor-fareast;
-	mso-bidi-font-family:"Times New Roman";}
-span.Heading2Char
-	{mso-style-name:"Heading 2 Char";
-	mso-style-noshow:yes;
-	mso-style-priority:9;
-	mso-style-unhide:no;
-	mso-style-locked:yes;
-	mso-style-link:"Heading 2";
-	mso-ansi-font-size:13.0pt;
-	mso-bidi-font-size:13.0pt;
-	font-family:"Calibri Light",sans-serif;
-	mso-ascii-font-family:"Calibri Light";
-	mso-ascii-theme-font:major-latin;
-	mso-fareast-font-family:"Times New Roman";
-	mso-fareast-theme-font:major-fareast;
-	mso-hansi-font-family:"Calibri Light";
-	mso-hansi-theme-font:major-latin;
-	mso-bidi-font-family:"Times New Roman";
-	mso-bidi-theme-font:major-bidi;
-	color:#2F5496;
-	mso-themecolor:accent1;
-	mso-themeshade:191;}
-span.Heading3Char
-	{mso-style-name:"Heading 3 Char";
-	mso-style-noshow:yes;
-	mso-style-priority:9;
-	mso-style-unhide:no;
-	mso-style-locked:yes;
-	mso-style-link:"Heading 3";
-	font-family:"Calibri Light",sans-serif;
-	mso-ascii-font-family:"Calibri Light";
-	mso-ascii-theme-font:major-latin;
-	mso-fareast-font-family:"Times New Roman";
-	mso-fareast-theme-font:major-fareast;
-	mso-hansi-font-family:"Calibri Light";
-	mso-hansi-theme-font:major-latin;
-	mso-bidi-font-family:"Times New Roman";
-	mso-bidi-theme-font:major-bidi;
-	color:#1F3763;
-	mso-themecolor:accent1;
-	mso-themeshade:127;}
-p.msonormal0, li.msonormal0, div.msonormal0
-	{mso-style-name:msonormal;
-	mso-style-unhide:no;
-	mso-margin-top-alt:auto;
-	margin-right:0cm;
-	mso-margin-bottom-alt:auto;
-	margin-left:0cm;
-	mso-pagination:widow-orphan;
-	font-size:12.0pt;
-	font-family:"Times New Roman",serif;
-	mso-fareast-font-family:"Times New Roman";
-	mso-fareast-theme-font:minor-fareast;}
-span.TitleChar
-	{mso-style-name:"Title Char";
-	mso-style-priority:10;
-	mso-style-unhide:no;
-	mso-style-locked:yes;
-	mso-style-link:Title;
-	font-family:"Calibri Light",sans-serif;
-	mso-ascii-font-family:"Calibri Light";
-	mso-hansi-font-family:"Calibri Light";
-	mso-bidi-font-family:"Calibri Light";
-	letter-spacing:-.5pt;}
-span.BodyTextChar
-	{mso-style-name:"Body Text Char";
-	mso-style-noshow:yes;
-	mso-style-priority:99;
-	mso-style-unhide:no;
-	mso-style-locked:yes;
-	mso-style-link:"Body Text";
-	font-family:"Times New Roman",serif;
-	mso-fareast-font-family:"Times New Roman";
-	mso-fareast-theme-font:minor-fareast;}
-p.msolistparagraphcxspfirst, li.msolistparagraphcxspfirst, div.msolistparagraphcxspfirst
-	{mso-style-name:msolistparagraphcxspfirst;
-	mso-style-unhide:no;
-	margin-top:0cm;
-	margin-right:0cm;
-	margin-bottom:0cm;
-	margin-left:36.0pt;
-	margin-bottom:.0001pt;
-	mso-pagination:widow-orphan;
-	font-size:12.0pt;
-	font-family:"Liberation Serif";
-	mso-fareast-font-family:"Times New Roman";
-	mso-fareast-theme-font:minor-fareast;
-	mso-bidi-font-family:"Times New Roman";}
-p.msolistparagraphcxspmiddle, li.msolistparagraphcxspmiddle, div.msolistparagraphcxspmiddle
-	{mso-style-name:msolistparagraphcxspmiddle;
-	mso-style-unhide:no;
-	margin-top:0cm;
-	margin-right:0cm;
-	margin-bottom:0cm;
-	margin-left:36.0pt;
-	margin-bottom:.0001pt;
-	mso-pagination:widow-orphan;
-	font-size:12.0pt;
-	font-family:"Liberation Serif";
-	mso-fareast-font-family:"Times New Roman";
-	mso-fareast-theme-font:minor-fareast;
-	mso-bidi-font-family:"Times New Roman";}
-p.msolistparagraphcxsplast, li.msolistparagraphcxsplast, div.msolistparagraphcxsplast
-	{mso-style-name:msolistparagraphcxsplast;
-	mso-style-unhide:no;
-	margin-top:0cm;
-	margin-right:0cm;
-	margin-bottom:0cm;
-	margin-left:36.0pt;
-	margin-bottom:.0001pt;
-	mso-pagination:widow-orphan;
-	font-size:12.0pt;
-	font-family:"Liberation Serif";
-	mso-fareast-font-family:"Times New Roman";
-	mso-fareast-theme-font:minor-fareast;
-	mso-bidi-font-family:"Times New Roman";}
-p.Heading, li.Heading, div.Heading
-	{mso-style-name:Heading;
-	mso-style-unhide:no;
-	margin-top:12.0pt;
-	margin-right:0cm;
-	margin-bottom:6.0pt;
-	margin-left:0cm;
-	mso-pagination:widow-orphan;
-	page-break-after:avoid;
-	font-size:14.0pt;
-	font-family:"Liberation Sans";
-	mso-fareast-font-family:"Times New Roman";
-	mso-fareast-theme-font:minor-fareast;
-	mso-bidi-font-family:"Times New Roman";}
-p.Index, li.Index, div.Index
-	{mso-style-name:Index;
-	mso-style-unhide:no;
-	margin:0cm;
-	margin-bottom:.0001pt;
-	mso-pagination:widow-orphan;
-	font-size:12.0pt;
-	font-family:"Liberation Serif";
-	mso-fareast-font-family:"Times New Roman";
-	mso-fareast-theme-font:minor-fareast;
-	mso-bidi-font-family:"Times New Roman";}
-p.Quotations, li.Quotations, div.Quotations
-	{mso-style-name:Quotations;
-	mso-style-unhide:no;
-	margin-top:0cm;
-	margin-right:1.0cm;
-	margin-bottom:14.15pt;
-	margin-left:1.0cm;
-	mso-pagination:widow-orphan;
-	font-size:12.0pt;
-	font-family:"Liberation Serif";
-	mso-fareast-font-family:"Times New Roman";
-	mso-fareast-theme-font:minor-fareast;
-	mso-bidi-font-family:"Times New Roman";}
-p.msochpdefault, li.msochpdefault, div.msochpdefault
-	{mso-style-name:msochpdefault;
-	mso-style-unhide:no;
-	mso-margin-top-alt:auto;
-	margin-right:0cm;
-	mso-margin-bottom-alt:auto;
-	margin-left:0cm;
-	mso-pagination:widow-orphan;
-	font-size:12.0pt;
-	font-family:"Liberation Serif";
-	mso-fareast-font-family:"Times New Roman";
-	mso-fareast-theme-font:minor-fareast;
-	mso-bidi-font-family:"Times New Roman";}
-span.InternetLink
-	{mso-style-name:"Internet Link";
-	mso-style-unhide:no;
-	color:navy;
-	text-decoration:underline;
-	text-underline:single;}
-span.SourceText
-	{mso-style-name:"Source Text";
-	mso-style-unhide:no;
-	font-family:"Liberation Mono";
-	mso-ascii-font-family:"Liberation Mono";
-	mso-hansi-font-family:"Liberation Mono";}
-span.StrongEmphasis
-	{mso-style-name:"Strong Emphasis";
-	mso-style-unhide:no;
-	font-weight:bold;}
-span.Bullets
-	{mso-style-name:Bullets;
-	mso-style-unhide:no;
-	font-family:OpenSymbol;
-	mso-ascii-font-family:OpenSymbol;
-	mso-hansi-font-family:OpenSymbol;}
-span.SpellE
-	{mso-style-name:"";
-	mso-spl-e:yes;}
-span.GramE
-	{mso-style-name:"";
-	mso-gram-e:yes;}
-.MsoChpDefault
-	{mso-style-type:export-only;
-	mso-default-props:yes;
-	font-size:12.0pt;
-	mso-ansi-font-size:12.0pt;
-	mso-bidi-font-size:12.0pt;
-	font-family:"Liberation Serif";
-	mso-ascii-font-family:"Liberation Serif";
-	mso-hansi-font-family:"Liberation Serif";}
-@page WordSection1
-	{size:612.0pt 792.0pt;
-	margin:2.0cm 2.0cm 2.0cm 2.0cm;
-	mso-header-margin:35.4pt;
-	mso-footer-margin:35.4pt;
-	mso-paper-source:0;}
-div.WordSection1
-	{page:WordSection1;}
--->
-</style>
-<!--[if gte mso 10]>
-<style>
- /* Style Definitions */
- table.MsoNormalTable
-	{mso-style-name:"Table Normal";
-	mso-tstyle-rowband-size:0;
-	mso-tstyle-colband-size:0;
-	mso-style-noshow:yes;
-	mso-style-priority:99;
-	mso-style-parent:"";
-	mso-padding-alt:0cm 5.4pt 0cm 5.4pt;
-	mso-para-margin:0cm;
-	mso-para-margin-bottom:.0001pt;
-	mso-pagination:widow-orphan;
-	font-size:12.0pt;
-	font-family:"Liberation Serif";}
-</style>
-<![endif]--><!--[if gte mso 9]><xml>
- <o:shapedefaults v:ext="edit" spidmax="1026"/>
-</xml><![endif]--><!--[if gte mso 9]><xml>
- <o:shapelayout v:ext="edit">
-  <o:idmap v:ext="edit" data="1"/>
- </o:shapelayout></xml><![endif]-->
+	{% load staticfiles %} 
+	<meta http-equiv="content-type" content="text/html; charset=windows-1252"/>
+	<title>Vertex Soft &gt; Blog &gt; Technology &gt; About Python</title>
+	<meta name="generator" content="LibreOffice 6.1.4.2 (Windows)"/>
+	<meta name="author" content="Mehran Shah"/>
+	<meta name="created" content="2019-03-26T20:01:00"/>
+	<meta name="changed" content="2019-03-27T21:28:34.952000000"/>
+	<meta name="AppVersion" content="14.0000"/>
+	<meta name="DocSecurity" content="0"/>
+	<meta name="HyperlinksChanged" content="false"/>
+	<meta name="LinksUpToDate" content="false"/>
+	<meta name="ScaleCrop" content="false"/>
+	<meta name="ShareDoc" content="false"/>
+	<style type="text/css">
+		@page { size: 8.27in 11.69in; margin: 1in }
+		p { margin-left: 0.26in; margin-right: 0.26in; margin-bottom: 0.1in; background: transparent; direction: ltr; text-align: left; orphans: 2; widows: 2 }
+		h1 { margin-left: 0.26in; margin-right: 0.26in; margin-bottom: 0.08in; background: transparent; direction: ltr; line-height: 115%; text-align: left; orphans: 2; widows: 2 }
+		h1.western { font-family: "Liberation Sans", sans-serif; font-size: 18pt }
+		h1.cjk { font-family: "Microsoft YaHei"; font-size: 18pt }
+		h1.ctl { font-family: "Lucida Sans"; font-size: 18pt }
+	</style>
+	<link rel="shortcut icon" href="{% static 'favicon.ico' %}" type="image/x-icon">
 </head>
-
-<body lang=en-PK link="#0563C1" vlink="#954F72" style='tab-interval:36.0pt'>
-
-<div class=WordSection1>
-
-<p class=MsoTitle><span lang=EN-US style='mso-ansi-language:EN-US'><a
-href="../../../">Vertex Soft</a> &gt; <a href="../../../blog">Blog</a> &gt; <a
-href="../../../blog">Technology</a> </span><span lang=en-PK style='mso-ansi-language:
-#0C00'><o:p></o:p></span></p>
-
-<p class=MsoTitle><span lang=EN-US style='font-size:24.0pt;mso-ansi-language:
-EN-US'>About Python</span><span lang=en-PK style='mso-ansi-language:#0C00'><o:p></o:p></span></p>
-
-<p class=MsoNormal><span lang=EN-US style='mso-ansi-language:EN-US'>&nbsp;</span><span
-lang=en-PK style='mso-ansi-language:#0C00'><o:p></o:p></span></p>
-
-<p class=MsoNormal><span lang=EN-US style='mso-ansi-language:EN-US'><a
-href="https://docs.python.org/2/faq/general.html#id4"><span class=InternetLink><span
-style='font-size:14.0pt;font-family:"Calibri",sans-serif;color:black'>What is
-Python?</span></span></a></span><span lang=en-PK style='mso-ansi-language:#0C00'><o:p></o:p></span></p>
-
-<p class=MsoNormal><span lang=EN-US style='font-size:14.0pt;font-family:"Calibri",sans-serif;
-color:black;mso-ansi-language:EN-US'>Python is an interpreted, interactive,
-object-oriented programming language. It incorporates modules, exceptions,
-dynamic typing, very high-level dynamic data types, and classes. Python
-combines remarkable power with very clear syntax. It has interfaces to many
-system calls and libraries, as well as to various window systems, and is
-extensible in C or C++. It is also usable as an extension language for
-applications that need a programmable interface. Finally, Python is portable:
-it runs on many Unix variants, on the Mac, and on PCs under MS-DOS, Windows,
-Windows NT, and OS/2.</span><span lang=en-PK style='mso-ansi-language:#0C00'><o:p></o:p></span></p>
-
-<p class=MsoNormal><span lang=EN-US style='mso-ansi-language:EN-US'>&nbsp;</span><span
-lang=en-PK style='mso-ansi-language:#0C00'><o:p></o:p></span></p>
-
-<p class=MsoNormal><span lang=EN-US style='mso-ansi-language:EN-US'><a
-href="https://docs.python.org/2/faq/general.html#id4"><span class=InternetLink><span
-style='font-size:14.0pt;font-family:"Calibri",sans-serif;color:black'>History
-of Python?</span></span></a></span><span lang=en-PK style='mso-ansi-language:
-#0C00'><o:p></o:p></span></p>
-
-<p class=MsoNormal><span lang=EN-US style='font-size:14.0pt;font-family:"Calibri",sans-serif;
-color:black;mso-ansi-language:EN-US'>Python was conceived in the late 1980s by
-Guido van Rossum at Centrum <span class=SpellE>Wiskunde</span> &amp;
-Informatica (CWI) in the Netherlands as a successor to the ABC language (itself
-inspired by SETL), capable of exception handling and interfacing with the
-Amoeba operating system. Its implementation began in December 1989. Van
-Rossum's long influence on Python is reflected in the title given to him by the
-Python community: Benevolent Dictator <span class=GramE>For</span> Life (BDFL) </span><span
-lang=ZH-CN style='font-size:14.0pt;font-family:NSimSun;color:black;mso-ansi-language:
-#0C00;mso-fareast-language:ZH-CN'>-</span><span lang=EN-US style='font-size:
-14.0pt;font-family:"Calibri",sans-serif;color:black;mso-ansi-language:EN-US'> a
-post from which he gave himself permanent vacation on July 12, 2018.</span><span
-lang=en-PK style='mso-ansi-language:#0C00'><o:p></o:p></span></p>
-
-<p class=MsoNormal><span lang=EN-US style='font-size:14.0pt;font-family:"Calibri",sans-serif;
-color:black;mso-ansi-language:EN-US'>&nbsp;</span><span lang=en-PK
-style='mso-ansi-language:#0C00'><o:p></o:p></span></p>
-
-<p class=MsoNormal><span lang=EN-US style='font-size:14.0pt;font-family:"Calibri",sans-serif;
-color:black;mso-ansi-language:EN-US'>Python 2.0 was released on 16 October 2000
-with many major new features, including a cycle-detecting garbage collector and
-support for Unicode.</span><span lang=en-PK style='mso-ansi-language:#0C00'><o:p></o:p></span></p>
-
-<p class=MsoNormal><span lang=EN-US style='font-size:14.0pt;font-family:"Calibri",sans-serif;
-color:black;mso-ansi-language:EN-US'>&nbsp;</span><span lang=en-PK
-style='mso-ansi-language:#0C00'><o:p></o:p></span></p>
-
-<p class=MsoNormal><span lang=EN-US style='font-size:14.0pt;font-family:"Calibri",sans-serif;
-color:black;mso-ansi-language:EN-US'>Python 3.0 was released on 3 December
-2008. It was a major revision of the language that is not completely
-backward-compatible. Many of its major features were backported to Python 2.6.x
-and 2.7.x version series. Releases of Python 3 include the 2to3 utility, which
-automates (at least partially) the translation of Python 2 code to Python 3.</span><span
-lang=en-PK style='mso-ansi-language:#0C00'><o:p></o:p></span></p>
-
-<p class=MsoNormal><span lang=EN-US style='font-size:14.0pt;font-family:"Calibri",sans-serif;
-color:black;mso-ansi-language:EN-US'>&nbsp;</span><span lang=en-PK
-style='mso-ansi-language:#0C00'><o:p></o:p></span></p>
-
-<p class=MsoNormal><span lang=EN-US style='font-size:14.0pt;font-family:"Calibri",sans-serif;
-color:black;mso-ansi-language:EN-US'>Python 2.7's end-of-life date was
-initially set at 2015 then postponed to 2020 out of concern that a large body
-of existing code could not easily be forward-ported to Python 3. In January
-2017, Google announced work on a Python 2.7 to Go trans compiler to improve
-performance under concurrent workloads.</span><span lang=en-PK
-style='mso-ansi-language:#0C00'><o:p></o:p></span></p>
-
-<p class=MsoNormal><span lang=EN-US style='mso-ansi-language:EN-US'>&nbsp;</span><span
-lang=en-PK style='mso-ansi-language:#0C00'><o:p></o:p></span></p>
-
-<p class=MsoNormal><span lang=EN-US style='mso-ansi-language:EN-US'><a
-href="https://docs.python.org/2/faq/general.html#id8"><span class=InternetLink><span
-style='font-size:14.0pt;font-family:"Calibri",sans-serif;color:black'>What is
-Python good for?</span></span></a></span><span lang=en-PK style='mso-ansi-language:
-#0C00'><o:p></o:p></span></p>
-
-<p class=MsoNormal><span lang=EN-US style='font-size:14.0pt;font-family:"Calibri",sans-serif;
-color:black;mso-ansi-language:EN-US'>Python is a high-level general-purpose
-programming language that can be applied to many different classes of problems.</span><span
-lang=en-PK style='mso-ansi-language:#0C00'><o:p></o:p></span></p>
-
-<p class=MsoNormal><span lang=EN-US style='font-size:14.0pt;font-family:"Calibri",sans-serif;
-color:black;mso-ansi-language:EN-US'>The language comes with a large standard
-library that covers areas such as string processing (regular expressions,
-Unicode, calculating differences between files), Internet protocols (HTTP, FTP,
-SMTP, XML-RPC, POP, IMAP, CGI programming), software engineering (unit testing,
-logging, profiling, parsing Python code), and operating system interfaces
-(system calls, file systems, TCP/IP sockets). A wide variety of third-party
-extensions are also available.</span><span lang=en-PK style='mso-ansi-language:
-#0C00'><o:p></o:p></span></p>
-
-<p class=MsoNormal><span lang=EN-US style='mso-ansi-language:EN-US'>&nbsp;</span><span
-lang=en-PK style='mso-ansi-language:#0C00'><o:p></o:p></span></p>
-
-<p class=MsoNormal><span lang=EN-US style='mso-ansi-language:EN-US'><a
-href="https://docs.python.org/2/faq/general.html#id22"><span
-class=InternetLink><span style='font-size:14.0pt;font-family:"Calibri",sans-serif;
-color:black'>How stable is Python?</span></span></a></span><span lang=en-PK
-style='mso-ansi-language:#0C00'><o:p></o:p></span></p>
-
-<p class=MsoNormal><span lang=EN-US style='font-size:14.0pt;font-family:"Calibri",sans-serif;
-color:black;mso-ansi-language:EN-US'>Very stable.</span><span lang=en-PK
-style='mso-ansi-language:#0C00'><o:p></o:p></span></p>
-
-<p class=MsoNormal><span lang=EN-US style='mso-ansi-language:EN-US'>&nbsp;</span><span
-lang=en-PK style='mso-ansi-language:#0C00'><o:p></o:p></span></p>
-
-<p class=MsoNormal><span lang=EN-US style='mso-ansi-language:EN-US'><a
-href="https://docs.python.org/2/faq/general.html#id23"><span
-class=InternetLink><span style='font-size:14.0pt;font-family:"Calibri",sans-serif;
-color:black'>How many people are using Python?</span></span></a></span><span
-lang=en-PK style='mso-ansi-language:#0C00'><o:p></o:p></span></p>
-
-<p class=MsoNormal><span lang=EN-US style='font-size:14.0pt;font-family:"Calibri",sans-serif;
-color:black;mso-ansi-language:EN-US'>There are probably tens of thousands of
-users, though it's difficult to obtain an exact count.</span><span lang=en-PK
-style='mso-ansi-language:#0C00'><o:p></o:p></span></p>
-
-<p class=MsoNormal><span lang=EN-US style='font-size:14.0pt;font-family:"Calibri",sans-serif;
-color:black;mso-ansi-language:EN-US'>Python is available for free download, so
-there are no sales figures, and it's available from many different sites and
-packaged with many Linux distributions, so download statistics don't tell the
-whole story either.</span><span lang=en-PK style='mso-ansi-language:#0C00'><o:p></o:p></span></p>
-
-<p class=MsoNormal><span lang=EN-US style='mso-ansi-language:EN-US'>&nbsp;</span><span
-lang=en-PK style='mso-ansi-language:#0C00'><o:p></o:p></span></p>
-
-<p class=MsoNormal><span lang=EN-US style='mso-ansi-language:EN-US'><a
-href="https://docs.python.org/2/faq/general.html#id27"><span
-class=InternetLink><span style='font-size:14.0pt;font-family:"Calibri",sans-serif;
-color:black'>Is Python a good language for beginning programmers?</span></span></a></span><span
-lang=en-PK style='mso-ansi-language:#0C00'><o:p></o:p></span></p>
-
-<p class=MsoNormal><span lang=EN-US style='font-size:14.0pt;font-family:"Calibri",sans-serif;
-color:black;mso-ansi-language:EN-US'>Yes.</span><span lang=en-PK
-style='mso-ansi-language:#0C00'><o:p></o:p></span></p>
-
-<p class=MsoNormal><span lang=EN-US style='font-size:14.0pt;font-family:"Calibri",sans-serif;
-color:black;mso-ansi-language:EN-US'>It is still common to start students with
-a procedural and statically typed language such as Pascal, C, or a subset of
-C++ or Java. Students may be better served by learning Python as their first
-language. Python has a very simple and consistent syntax and a large standard
-library and, most importantly, using Python in a beginning programming course
-lets students concentrate on important programming skills such as problem
-decomposition and data type design. With Python, students can be quickly
-introduced to basic concepts such as loops and procedures. They can probably
-even work with user-defined objects in their very first course.</span><span
-lang=en-PK style='mso-ansi-language:#0C00'><o:p></o:p></span></p>
-
-<p class=MsoNormal><span lang=EN-US style='font-size:14.0pt;font-family:"Calibri",sans-serif;
-color:black;mso-ansi-language:EN-US'>For a student who has never programmed
-before, using a statically typed language seems unnatural. It presents
-additional complexity that the student must master and slows the pace of the
-course. The students are trying to learn to think like a computer, decompose
-problems, design consistent interfaces, and encapsulate data. While learning to
-use a statically typed language is important in the long term, it is not
-necessarily the best topic to address in the students' first programming
-course.</span><span lang=en-PK style='mso-ansi-language:#0C00'><o:p></o:p></span></p>
-
-<p class=MsoNormal><span lang=EN-US style='font-size:14.0pt;font-family:"Calibri",sans-serif;
-color:black;mso-ansi-language:EN-US'>Many other aspects of Python make it a
-good first language. Like Java, Python has a large standard library so that
-students can be assigned programming projects very early in the course that <em><span
-style='font-family:"Calibri",sans-serif;font-style:normal'>do </span></em>something.
-Assignments aren't restricted to the standard four-function calculator and
-check balancing programs. By using the standard library, students can gain the
-satisfaction of working on realistic applications as they learn the
-fundamentals of programming. Using the standard library also teaches students
-about code reuse. Third-party modules such as <span class=SpellE>PyGame</span>
-are also helpful in extending the students' reach.</span><span lang=en-PK
-style='mso-ansi-language:#0C00'><o:p></o:p></span></p>
-
-<p class=MsoNormal><span lang=EN-US style='font-size:14.0pt;font-family:"Calibri",sans-serif;
-color:black;mso-ansi-language:EN-US'>&nbsp;</span><span lang=en-PK
-style='mso-ansi-language:#0C00'><o:p></o:p></span></p>
-
-<p class=MsoNormal><span class=InternetLink><span lang=en-PK style='font-size:
-14.0pt;font-family:"Calibri",sans-serif;color:black;mso-ansi-language:#0C00'>Base
-language of python</span></span><span lang=en-PK style='mso-ansi-language:#0C00'><o:p></o:p></span></p>
-
-<p class=MsoNormal><span lang=EN-US style='font-size:14.0pt;font-family:"Calibri",sans-serif;
-color:black;mso-ansi-language:EN-US'>Python is a set of rules. <span
-class=GramE>Of course</span> these rules are implemented by using some OS
-programming language.</span><span lang=en-PK style='mso-ansi-language:#0C00'><o:p></o:p></span></p>
-
-<p class=MsoNormal><span lang=EN-US style='font-size:14.0pt;font-family:"Calibri",sans-serif;
-color:black;mso-ansi-language:EN-US'>Since most modern OS are written in C,
-compilers/interpreters for modern high-level languages are also written in C.
-Python is not an exception - its most popular traditional implementation is
-called <span class=SpellE>CPython</span> and is written in C.</span><span
-lang=en-PK style='mso-ansi-language:#0C00'><o:p></o:p></span></p>
-
-<p class=MsoNormal><span lang=EN-US style='font-size:14.0pt;font-family:"Calibri",sans-serif;
-color:black;mso-ansi-language:EN-US'>&nbsp;</span><span lang=en-PK
-style='mso-ansi-language:#0C00'><o:p></o:p></span></p>
-
-<p class=MsoNormal><span lang=EN-US style='font-size:14.0pt;font-family:"Calibri",sans-serif;
-color:black;mso-ansi-language:EN-US'>There are other implementations:</span><span
-lang=en-PK style='mso-ansi-language:#0C00'><o:p></o:p></span></p>
-
-<p class=MsoListParagraph style='text-indent:-18.0pt'><span lang=EN-US
-style='font-size:14.0pt;font-family:Symbol;color:black;mso-ansi-language:EN-US'>.</span><span
-lang=EN-US style='font-size:7.0pt;font-family:"Times New Roman",serif;
-color:black;mso-ansi-language:EN-US'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-</span><span class=SpellE><span lang=EN-US style='font-size:14.0pt;font-family:
-"Calibri",sans-serif;color:black;mso-ansi-language:EN-US'>IronPython</span></span><span
-lang=EN-US style='font-size:14.0pt;font-family:"Calibri",sans-serif;color:black;
-mso-ansi-language:EN-US'> (Python running on .NET)</span><span lang=en-PK
-style='mso-ansi-language:#0C00'><o:p></o:p></span></p>
-
-<p class=MsoListParagraph style='text-indent:-18.0pt'><span lang=EN-US
-style='font-size:14.0pt;font-family:Symbol;color:black;mso-ansi-language:EN-US'>.</span><span
-lang=EN-US style='font-size:7.0pt;font-family:"Times New Roman",serif;
-color:black;mso-ansi-language:EN-US'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-</span><span class=SpellE><span lang=EN-US style='font-size:14.0pt;font-family:
-"Calibri",sans-serif;color:black;mso-ansi-language:EN-US'>Jython</span></span><span
-lang=EN-US style='font-size:14.0pt;font-family:"Calibri",sans-serif;color:black;
-mso-ansi-language:EN-US'> (Python running on the Java Virtual Machine)</span><span
-lang=en-PK style='mso-ansi-language:#0C00'><o:p></o:p></span></p>
-
-<p class=MsoListParagraph style='text-indent:-18.0pt'><span lang=EN-US
-style='font-size:14.0pt;font-family:Symbol;color:black;mso-ansi-language:EN-US'>.</span><span
-lang=EN-US style='font-size:7.0pt;font-family:"Times New Roman",serif;
-color:black;mso-ansi-language:EN-US'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-</span><span class=SpellE><span lang=EN-US style='font-size:14.0pt;font-family:
-"Calibri",sans-serif;color:black;mso-ansi-language:EN-US'>PyPy</span></span><span
-lang=EN-US style='font-size:14.0pt;font-family:"Calibri",sans-serif;color:black;
-mso-ansi-language:EN-US'> (A fast python implementation with a JIT compiler)</span><span
-lang=en-PK style='mso-ansi-language:#0C00'><o:p></o:p></span></p>
-
-<p class=MsoListParagraph style='text-indent:-18.0pt'><span lang=EN-US
-style='font-size:14.0pt;font-family:Symbol;color:black;mso-ansi-language:EN-US'>.</span><span
-lang=EN-US style='font-size:7.0pt;font-family:"Times New Roman",serif;
-color:black;mso-ansi-language:EN-US'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-</span><span class=SpellE><span lang=EN-US style='font-size:14.0pt;font-family:
-"Calibri",sans-serif;color:black;mso-ansi-language:EN-US'>Stackless</span></span><span
-lang=EN-US style='font-size:14.0pt;font-family:"Calibri",sans-serif;color:black;
-mso-ansi-language:EN-US'> Python (Branch of <span class=SpellE>CPython</span>
-supporting <span class=SpellE>microthreads</span>)</span><span lang=en-PK
-style='mso-ansi-language:#0C00'><o:p></o:p></span></p>
-
-<p class=MsoNormal><span lang=EN-US style='font-size:14.0pt;font-family:"Calibri",sans-serif;
-color:black;mso-ansi-language:EN-US'>&nbsp;</span><span lang=en-PK
-style='mso-ansi-language:#0C00'><o:p></o:p></span></p>
-
-<p class=MsoNormal><u><span lang=EN-US style='font-size:14.0pt;font-family:
-"Calibri",sans-serif;color:black;mso-ansi-language:EN-US'>Its Characteristic
-features:</span></u><span lang=en-PK style='mso-ansi-language:#0C00'><o:p></o:p></span></p>
-
-<p class=MsoNormal><a name=f9c4></a><span lang=EN-US style='font-size:14.0pt;
-font-family:Symbol;color:black;mso-ansi-language:EN-US'>.</span><span
-lang=EN-US style='font-size:14.0pt;font-family:"Calibri",sans-serif;color:black;
-mso-ansi-language:EN-US'>Interactive</span><span lang=en-PK style='mso-ansi-language:
-#0C00'><o:p></o:p></span></p>
-
-<p class=MsoNormal><a name=35cd></a><span lang=EN-US style='font-size:14.0pt;
-font-family:Symbol;color:black;mso-ansi-language:EN-US'>.</span><span
-lang=EN-US style='font-size:14.0pt;font-family:"Calibri",sans-serif;color:black;
-mso-ansi-language:EN-US'>Interpreted</span><span lang=en-PK style='mso-ansi-language:
-#0C00'><o:p></o:p></span></p>
-
-<p class=MsoNormal><a name=df96></a><span lang=EN-US style='font-size:14.0pt;
-font-family:Symbol;color:black;mso-ansi-language:EN-US'>.</span><span
-lang=EN-US style='font-size:14.0pt;font-family:"Calibri",sans-serif;color:black;
-mso-ansi-language:EN-US'>Modular</span><span lang=en-PK style='mso-ansi-language:
-#0C00'><o:p></o:p></span></p>
-
-<p class=MsoNormal><a name=9902></a><span lang=EN-US style='font-size:14.0pt;
-font-family:Symbol;color:black;mso-ansi-language:EN-US'>.</span><span
-lang=EN-US style='font-size:14.0pt;font-family:"Calibri",sans-serif;color:black;
-mso-ansi-language:EN-US'>Dynamic</span><span lang=en-PK style='mso-ansi-language:
-#0C00'><o:p></o:p></span></p>
-
-<p class=MsoNormal><a name=977c></a><span lang=EN-US style='font-size:14.0pt;
-font-family:Symbol;color:black;mso-ansi-language:EN-US'>.</span><span
-lang=EN-US style='font-size:14.0pt;font-family:"Calibri",sans-serif;color:black;
-mso-ansi-language:EN-US'>Object-oriented</span><span lang=en-PK
-style='mso-ansi-language:#0C00'><o:p></o:p></span></p>
-
-<p class=MsoNormal><a name=c20f></a><span lang=EN-US style='font-size:14.0pt;
-font-family:Symbol;color:black;mso-ansi-language:EN-US'>.</span><span
-lang=EN-US style='font-size:14.0pt;font-family:"Calibri",sans-serif;color:black;
-mso-ansi-language:EN-US'>Portable</span><span lang=en-PK style='mso-ansi-language:
-#0C00'><o:p></o:p></span></p>
-
-<p class=MsoNormal><a name=f59a></a><span lang=EN-US style='font-size:14.0pt;
-font-family:Symbol;color:black;mso-ansi-language:EN-US'>.</span><span
-lang=EN-US style='font-size:14.0pt;font-family:"Calibri",sans-serif;color:black;
-mso-ansi-language:EN-US'>High level</span><span lang=en-PK style='mso-ansi-language:
-#0C00'><o:p></o:p></span></p>
-
-<p class=MsoNormal><a name=c230></a><span lang=EN-US style='font-size:14.0pt;
-font-family:Symbol;color:black;mso-ansi-language:EN-US'>.</span><span
-lang=EN-US style='font-size:14.0pt;font-family:"Calibri",sans-serif;color:black;
-mso-ansi-language:EN-US'>Extensible in C++ &amp; C</span><span lang=en-PK
-style='mso-ansi-language:#0C00'><o:p></o:p></span></p>
-
-<p class=MsoNormal><span lang=EN-US style='font-size:14.0pt;font-family:"Calibri",sans-serif;
-color:black;mso-ansi-language:EN-US'>&nbsp;</span><span lang=en-PK
-style='mso-ansi-language:#0C00'><o:p></o:p></span></p>
-
-<p class=MsoNormal><span class=StrongEmphasis><u><span lang=EN-US
-style='font-size:14.0pt;font-family:"Calibri",sans-serif;color:black;
-mso-ansi-language:EN-US;font-weight:normal'>Strengths of Python:</span></u></span><span
-lang=en-PK style='mso-ansi-language:#0C00'><o:p></o:p></span></p>
-
-<p class=MsoNormal><span class=StrongEmphasis><span lang=EN-US
-style='font-size:14.0pt;font-family:"Calibri",sans-serif;color:black;
-mso-ansi-language:EN-US;font-weight:normal'>Readable and Maintainable Code</span></span><span
-lang=en-PK style='mso-ansi-language:#0C00'><o:p></o:p></span></p>
-
-<p class=MsoNormal><span class=StrongEmphasis><span lang=EN-US
-style='font-size:14.0pt;font-family:"Calibri",sans-serif;color:black;
-mso-ansi-language:EN-US;font-weight:normal'>Multiple Programming Paradigms</span></span><span
-lang=en-PK style='mso-ansi-language:#0C00'><o:p></o:p></span></p>
-
-<p class=MsoNormal><span class=StrongEmphasis><span lang=EN-US
-style='font-size:14.0pt;font-family:"Calibri",sans-serif;color:black;
-mso-ansi-language:EN-US;font-weight:normal'>Compatible with Major Platforms and
-Systems</span></span><span lang=en-PK style='mso-ansi-language:#0C00'><o:p></o:p></span></p>
-
-<p class=MsoNormal><span class=StrongEmphasis><span lang=EN-US
-style='font-size:14.0pt;font-family:"Calibri",sans-serif;color:black;
-mso-ansi-language:EN-US;font-weight:normal'>Robust Standard Library</span></span><span
-lang=en-PK style='mso-ansi-language:#0C00'><o:p></o:p></span></p>
-
-<p class=MsoNormal><a name=fe13></a><span class=StrongEmphasis><span
-lang=EN-US style='font-size:14.0pt;font-family:"Calibri",sans-serif;color:black;
-mso-ansi-language:EN-US;font-weight:normal'>Extensive Support Libraries</span></span><span
-lang=en-PK style='mso-ansi-language:#0C00'><o:p></o:p></span></p>
-
-<p class=MsoNormal><a name=ca4a></a><span class=StrongEmphasis><span
-lang=EN-US style='font-size:14.0pt;font-family:"Calibri",sans-serif;color:black;
-mso-ansi-language:EN-US;font-weight:normal'>Integration Feature</span></span><span
-lang=en-PK style='mso-ansi-language:#0C00'><o:p></o:p></span></p>
-
-<p class=MsoNormal><a name=0685></a><span class=StrongEmphasis><span
-lang=EN-US style='font-size:14.0pt;font-family:"Calibri",sans-serif;color:black;
-mso-ansi-language:EN-US;font-weight:normal'>Improved Programmer's Productivity</span></span><span
-lang=en-PK style='mso-ansi-language:#0C00'><o:p></o:p></span></p>
-
-<p class=MsoNormal><span class=StrongEmphasis><span lang=EN-US
-style='font-size:14.0pt;font-family:"Calibri",sans-serif;color:black;
-mso-ansi-language:EN-US;font-weight:normal'>Many Open Source Frameworks and
-Tools</span></span><span lang=en-PK style='mso-ansi-language:#0C00'><o:p></o:p></span></p>
-
-<p class=MsoNormal><span class=StrongEmphasis><span lang=EN-US
-style='font-size:14.0pt;font-family:"Calibri",sans-serif;color:black;
-mso-ansi-language:EN-US;font-weight:normal'>Simplify Complex Software
-Development</span></span><span lang=en-PK style='mso-ansi-language:#0C00'><o:p></o:p></span></p>
-
-<p class=MsoNormal><span class=StrongEmphasis><span lang=EN-US
-style='font-size:14.0pt;font-family:"Calibri",sans-serif;color:black;
-mso-ansi-language:EN-US;font-weight:normal'>Adopt Test Driven Development</span></span><span
-lang=en-PK style='mso-ansi-language:#0C00'><o:p></o:p></span></p>
-
-<p class=MsoNormal><span lang=EN-US style='font-size:14.0pt;font-family:"Calibri",sans-serif;
-color:black;mso-ansi-language:EN-US'>&nbsp;</span><span lang=en-PK
-style='mso-ansi-language:#0C00'><o:p></o:p></span></p>
-
-<p class=MsoNormal><span class=StrongEmphasis><u><span lang=EN-US
-style='font-size:14.0pt;font-family:"Calibri",sans-serif;color:black;
-mso-ansi-language:EN-US;font-weight:normal'>Weaknesses:</span></u></span><span
-lang=en-PK style='mso-ansi-language:#0C00'><o:p></o:p></span></p>
-
-<p class=MsoNormal><a name=c876></a><span class=StrongEmphasis><span
-lang=EN-US style='font-size:14.0pt;font-family:"Calibri",sans-serif;color:black;
-mso-ansi-language:EN-US;font-weight:normal'>Difficulty in Using Other Languages</span></span><span
-lang=en-PK style='mso-ansi-language:#0C00'><o:p></o:p></span></p>
-
-<p class=MsoNormal><a name=3ff1></a><span class=StrongEmphasis><span
-lang=EN-US style='font-size:14.0pt;font-family:"Calibri",sans-serif;color:black;
-mso-ansi-language:EN-US;font-weight:normal'>Weak in Mobile Computing</span></span><span
-lang=en-PK style='mso-ansi-language:#0C00'><o:p></o:p></span></p>
-
-<p class=MsoNormal><a name=a56f></a><span class=StrongEmphasis><span
-lang=EN-US style='font-size:14.0pt;font-family:"Calibri",sans-serif;color:black;
-mso-ansi-language:EN-US;font-weight:normal'>Gets Slow in Speed</span></span><span
-lang=en-PK style='mso-ansi-language:#0C00'><o:p></o:p></span></p>
-
-<p class=MsoNormal><a name=7d99></a><span class=StrongEmphasis><span
-lang=EN-US style='font-size:14.0pt;font-family:"Calibri",sans-serif;color:black;
-mso-ansi-language:EN-US;font-weight:normal'>Run-time Errors</span></span><span
-lang=en-PK style='mso-ansi-language:#0C00'><o:p></o:p></span></p>
-
-<p class=MsoNormal><span lang=EN-US style='font-size:14.0pt;font-family:"Calibri",sans-serif;
-color:black;mso-ansi-language:EN-US'>&nbsp;</span><span lang=en-PK
-style='mso-ansi-language:#0C00'><o:p></o:p></span></p>
-
-<p class=MsoNormal><a name=dea5></a><span class=StrongEmphasis><span
-lang=EN-US style='font-size:14.0pt;font-family:"Calibri",sans-serif;color:black;
-mso-ansi-language:EN-US;font-weight:normal'>Underdeveloped Database Access
-Layers</span></span><span lang=en-PK style='mso-ansi-language:#0C00'><o:p></o:p></span></p>
-
-<p class=MsoNormal><span class=StrongEmphasis><span lang=EN-US
-style='font-size:14.0pt;font-family:"Calibri",sans-serif;color:black;
-mso-ansi-language:EN-US;font-weight:normal'>&nbsp;</span></span><span
-lang=en-PK style='mso-ansi-language:#0C00'><o:p></o:p></span></p>
-
-<p class=MsoNormal><span class=StrongEmphasis><u><span lang=EN-US
-style='font-size:14.0pt;font-family:"Calibri",sans-serif;color:black;
-mso-ansi-language:EN-US;font-weight:normal'>Why we have chosen Python for the
-development of Vertex AMI?</span></u></span><span lang=en-PK style='mso-ansi-language:
-#0C00'><o:p></o:p></span></p>
-
-<p class=MsoNormal><span class=StrongEmphasis><span lang=EN-US
-style='font-size:14.0pt;font-family:"Calibri",sans-serif;color:black;
-mso-ansi-language:EN-US;font-weight:normal'>We have chosen python because </span></span><span
-lang=en-PK style='mso-ansi-language:#0C00'><o:p></o:p></span></p>
-
-<p class=MsoListParagraph style='text-indent:-18.0pt'><span
-class=StrongEmphasis><span lang=EN-US style='font-size:14.0pt;font-family:Symbol;
-color:black;mso-ansi-language:EN-US;font-weight:normal'>.</span></span><span
-class=StrongEmphasis><span lang=EN-US style='font-size:7.0pt;font-family:"Times New Roman",serif;
-color:black;mso-ansi-language:EN-US;font-weight:normal'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-</span></span><span class=StrongEmphasis><span lang=EN-US style='font-size:
-14.0pt;font-family:"Calibri",sans-serif;color:black;mso-ansi-language:EN-US;
-font-weight:normal'>The work which was required to do by us was already done
-and provided in python built in APIs. We have to write just wrapper functions
-to use those libraries. </span></span><span lang=en-PK style='mso-ansi-language:
-#0C00'><o:p></o:p></span></p>
-
-<p class=MsoListParagraph style='text-indent:-18.0pt'><span
-class=StrongEmphasis><span lang=EN-US style='font-size:14.0pt;font-family:Symbol;
-color:black;mso-ansi-language:EN-US;font-weight:normal'>.</span></span><span
-class=StrongEmphasis><span lang=EN-US style='font-size:7.0pt;font-family:"Times New Roman",serif;
-color:black;mso-ansi-language:EN-US;font-weight:normal'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-</span></span><span class=StrongEmphasis><span lang=EN-US style='font-size:
-14.0pt;font-family:"Calibri",sans-serif;color:black;mso-ansi-language:EN-US;
-font-weight:normal'>The work which is done in many lines of code, is done by
-just single line of code</span></span><span lang=en-PK style='mso-ansi-language:
-#0C00'><o:p></o:p></span></p>
-
-<p class=MsoListParagraph style='text-indent:-18.0pt'><span
-class=StrongEmphasis><span lang=EN-US style='font-size:14.0pt;font-family:Symbol;
-color:black;mso-ansi-language:EN-US;font-weight:normal'>.</span></span><span
-class=StrongEmphasis><span lang=EN-US style='font-size:7.0pt;font-family:"Times New Roman",serif;
-color:black;mso-ansi-language:EN-US;font-weight:normal'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-</span></span><span class=StrongEmphasis><span lang=EN-US style='font-size:
-14.0pt;font-family:"Calibri",sans-serif;color:black;mso-ansi-language:EN-US;
-font-weight:normal'>Python provides a strict mode of code indentation, by which
-not only code is interpreted but it also makes code readable for human</span></span><span
-lang=en-PK style='mso-ansi-language:#0C00'><o:p></o:p></span></p>
-
-<p class=MsoListParagraph style='text-indent:-18.0pt'><span
-class=StrongEmphasis><span lang=EN-US style='font-size:14.0pt;font-family:Symbol;
-color:black;mso-ansi-language:EN-US;font-weight:normal'>.</span></span><span
-class=StrongEmphasis><span lang=EN-US style='font-size:7.0pt;font-family:"Times New Roman",serif;
-color:black;mso-ansi-language:EN-US;font-weight:normal'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-</span></span><span class=StrongEmphasis><span lang=EN-US style='font-size:
-14.0pt;font-family:"Calibri",sans-serif;color:black;mso-ansi-language:EN-US;
-font-weight:normal'>Python syntax is most close to natural language</span></span><span
-lang=en-PK style='mso-ansi-language:#0C00'><o:p></o:p></span></p>
-
-<p class=MsoListParagraph style='text-indent:-18.0pt'><span
-class=StrongEmphasis><span lang=EN-US style='font-size:14.0pt;font-family:Symbol;
-color:black;mso-ansi-language:EN-US;font-weight:normal'>.</span></span><span
-class=StrongEmphasis><span lang=EN-US style='font-size:7.0pt;font-family:"Times New Roman",serif;
-color:black;mso-ansi-language:EN-US;font-weight:normal'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-</span></span><span class=StrongEmphasis><span lang=EN-US style='font-size:
-14.0pt;font-family:"Calibri",sans-serif;color:black;mso-ansi-language:EN-US;
-font-weight:normal'>Python is emerging language in the Software Development,
-from Data Sciences to Web API Development</span></span><span lang=en-PK
-style='mso-ansi-language:#0C00'><o:p></o:p></span></p>
-
-<p class=MsoListParagraph style='text-indent:-18.0pt'><span
-class=StrongEmphasis><span lang=EN-US style='font-size:14.0pt;font-family:Symbol;
-color:black;mso-ansi-language:EN-US;font-weight:normal'>.</span></span><span
-class=StrongEmphasis><span lang=EN-US style='font-size:7.0pt;font-family:"Times New Roman",serif;
-color:black;mso-ansi-language:EN-US;font-weight:normal'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-</span></span><span class=StrongEmphasis><span lang=EN-US style='font-size:
-14.0pt;font-family:"Calibri",sans-serif;color:black;mso-ansi-language:EN-US;
-font-weight:normal'>Python's Django Framework is most popular and rich
-framework which made our work of Web Application development smooth</span></span><span
-lang=en-PK style='mso-ansi-language:#0C00'><o:p></o:p></span></p>
-
-<p class=MsoListParagraph style='text-indent:-18.0pt'><span
-class=StrongEmphasis><span lang=EN-US style='font-size:14.0pt;font-family:Symbol;
-color:black;mso-ansi-language:EN-US;font-weight:normal'>.</span></span><span
-class=StrongEmphasis><span lang=EN-US style='font-size:7.0pt;font-family:"Times New Roman",serif;
-color:black;mso-ansi-language:EN-US;font-weight:normal'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-</span></span><span class=StrongEmphasis><span lang=EN-US style='font-size:
-14.0pt;font-family:"Calibri",sans-serif;color:black;mso-ansi-language:EN-US;
-font-weight:normal'>With the selection of Python, we became able to achieve our
-milestones regarding Quality, Time and Cost</span></span><span lang=en-PK
-style='mso-ansi-language:#0C00'><o:p></o:p></span></p>
-
-<p class=MsoListParagraph style='text-indent:-18.0pt'><span
-class=StrongEmphasis><span lang=EN-US style='font-size:14.0pt;font-family:Symbol;
-color:black;mso-ansi-language:EN-US;font-weight:normal'>.</span></span><span
-class=StrongEmphasis><span lang=EN-US style='font-size:7.0pt;font-family:"Times New Roman",serif;
-color:black;mso-ansi-language:EN-US;font-weight:normal'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-</span></span><span class=StrongEmphasis><span lang=EN-US style='font-size:
-14.0pt;font-family:"Calibri",sans-serif;color:black;mso-ansi-language:EN-US;
-font-weight:normal'>Learning curve of Python is very small</span></span><span
-lang=en-PK style='mso-ansi-language:#0C00'><o:p></o:p></span></p>
-
-<p class=MsoListParagraph style='text-indent:-18.0pt'><span
-class=StrongEmphasis><span lang=EN-US style='font-size:14.0pt;font-family:Symbol;
-color:black;mso-ansi-language:EN-US;font-weight:normal'>.</span></span><span
-class=StrongEmphasis><span lang=EN-US style='font-size:7.0pt;font-family:"Times New Roman",serif;
-color:black;mso-ansi-language:EN-US;font-weight:normal'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-</span></span><span class=StrongEmphasis><span lang=EN-US style='font-size:
-14.0pt;font-family:"Calibri",sans-serif;color:black;mso-ansi-language:EN-US;
-font-weight:normal'>Any developer having C, C++ or Java experience can start
-working on Python in just few days</span></span><span lang=en-PK
-style='mso-ansi-language:#0C00'><o:p></o:p></span></p>
-
-<p class=MsoListParagraph style='text-indent:-18.0pt'><span
-class=StrongEmphasis><span lang=EN-US style='font-size:14.0pt;font-family:Symbol;
-color:black;mso-ansi-language:EN-US;font-weight:normal'>.</span></span><span
-class=StrongEmphasis><span lang=EN-US style='font-size:7.0pt;font-family:"Times New Roman",serif;
-color:black;mso-ansi-language:EN-US;font-weight:normal'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-</span></span><span class=StrongEmphasis><span lang=EN-US style='font-size:
-14.0pt;font-family:"Calibri",sans-serif;color:black;mso-ansi-language:EN-US;
-font-weight:normal'>All good things of all mature programming languages are
-accommodated in this single programming language</span></span><span lang=en-PK
-style='mso-ansi-language:#0C00'><o:p></o:p></span></p>
-
-<p class=MsoNormal><span lang=EN-US style='font-size:14.0pt;font-family:"Calibri",sans-serif;
-color:black;mso-ansi-language:EN-US'>&nbsp;</span><span lang=en-PK
-style='mso-ansi-language:#0C00'><o:p></o:p></span></p>
-
-<p class=MsoNormal><a name=61a2></a><span class=StrongEmphasis><u><span
-lang=EN-US style='font-size:14.0pt;font-family:"Calibri",sans-serif;color:black;
-mso-ansi-language:EN-US;font-weight:normal'>Conclusion:</span></u></span><span
-lang=en-PK style='mso-ansi-language:#0C00'><o:p></o:p></span></p>
-
-<p class=MsoNormal><a name=b0ac></a><span lang=EN-US style='font-size:14.0pt;
-font-family:"Calibri",sans-serif;color:black;mso-ansi-language:EN-US'>Python is
-a robust programming language and provides an easy usage of the code lines,
-maintenance can be handled in a great way, and debugging can be done easily
-too. It has gained importance across the globe as computer giant Google has
-made it one of its official programming languages.</span><span lang=en-PK
-style='mso-ansi-language:#0C00'><o:p></o:p></span></p>
-
-<p class=MsoNormal><span lang=EN-US style='font-size:14.0pt;font-family:"Calibri",sans-serif;
-color:black;mso-ansi-language:EN-US'>&nbsp;</span><span lang=en-PK
-style='mso-ansi-language:#0C00'><o:p></o:p></span></p>
-
-<p class=MsoNormal><span lang=EN-US style='font-size:14.0pt;mso-ansi-language:
-EN-US'><a href="/">http://www.vertexsoft.net</a></span><span
-lang=en-PK style='mso-ansi-language:#0C00'><o:p></o:p></span></p>
-
-<p class=MsoNormal><span lang=en-PK style='mso-ansi-language:#0C00'>&nbsp;<o:p></o:p></span></p>
-
-<p class=MsoNormal><a href="/" data-slide=1><span lang=en-PK style='font-family:
-"Times New Roman",serif;mso-ansi-language:#0C00;mso-no-proof:yes;text-decoration:
-none;text-underline:none'><img border=0 id="_x0000_i1025"
-src="{% static 'images/logo.png' %}" alt=logo></span></a><span
-lang=en-PK style='mso-ansi-language:#0C00'><o:p></o:p></span></p>
-
-<p class=MsoNormal><span lang=EN-US style='font-size:14.0pt;font-family:"Calibri",sans-serif;
-color:black;mso-ansi-language:EN-US'>&nbsp;</span><span lang=en-PK
-style='mso-ansi-language:#0C00'><o:p></o:p></span></p>
-
-</div>
-
+<body lang="en-GB" dir="ltr">
+<p align="center" style="margin-top: 0.17in; margin-bottom: 0.08in; page-break-after: avoid">
+<a href="http://vertexsoft.net/"><span style="font-variant: normal"><font color="#954f72"><font face="Calibri Light, sans-serif"><font size="6" style="font-size: 28pt"><span style="letter-spacing: -0.5pt"><span lang="en-US"><span style="font-style: normal"><u><span style="font-weight: normal">Vertex
+Soft</span></u></span></span></span></font></font></font></span></a><span style="font-variant: normal"><font color="#000000"><span style="letter-spacing: -0.5pt">&nbsp;</span></font></span><span style="font-variant: normal"><font color="#000000"><font face="Calibri Light, sans-serif"><font size="6" style="font-size: 28pt"><span style="letter-spacing: -0.5pt"><span lang="en-US"><span style="font-style: normal"><span style="font-weight: normal">&gt;&nbsp;</span></span></span></span></font></font></font></span><a href="http://vertexsoft.net/blog"><span style="font-variant: normal"><font color="#954f72"><font face="Calibri Light, sans-serif"><font size="6" style="font-size: 28pt"><span style="letter-spacing: -0.5pt"><span lang="en-US"><span style="font-style: normal"><u><span style="font-weight: normal">Blog</span></u></span></span></span></font></font></font></span></a><span style="font-variant: normal"><font color="#000000"><span style="letter-spacing: -0.5pt">&nbsp;</span></font></span><span style="font-variant: normal"><font color="#000000"><font face="Calibri Light, sans-serif"><font size="6" style="font-size: 28pt"><span style="letter-spacing: -0.5pt"><span lang="en-US"><span style="font-style: normal"><span style="font-weight: normal">&gt;&nbsp;</span></span></span></span></font></font></font></span><a href="http://vertexsoft.net/blog"><span style="font-variant: normal"><font color="#954f72"><font face="Calibri Light, sans-serif"><font size="6" style="font-size: 28pt"><span style="letter-spacing: -0.5pt"><span lang="en-US"><span style="font-style: normal"><u><span style="font-weight: normal">Technology</span></u></span></span></span></font></font></font></span></a></p>
+<p align="center" style="margin-top: 0.17in; margin-bottom: 0.08in; page-break-after: avoid">
+<font face="Liberation Sans, sans-serif"><font size="6" style="font-size: 28pt"><b><h1>About Python</h1></b></font></font></p>
+<p><img src="https://www.python.org/static/img/python-logo.png" /></p>
+<h1 class="western">What is python?</h1>
+<p style="margin-bottom: 0.14in"><font size="4" style="font-size: 14pt">Python
+is object oriented high level programming language. Its basic usage
+is to comprises general purpose programming and with the help of this
+language one can develop both desktop and web applications in very
+interactive manner. It is not a medium dependant language as it runs
+on Unix, Mac and PCs as well. By using python language a programmer
+can develop very cognitive and scientific applications. it can also
+facilitate its user to create a high level numeric application.
+Python language can also be interpreted /translated in Java.</font></p>
+<p style="margin-bottom: 0.14in"><font size="4" style="font-size: 14pt">One
+can describe the main usage of this language in the domain of script
+writing ,data analysis, web developing and machine learning.</font></p>
+<h1 class="western">Classified history of Python</h1>
+<p style="margin-bottom: 0.14in"><font size="4" style="font-size: 14pt">Python
+language was apprehended in late 1980s by a Dutch programmer &ldquo;Guido
+van Rossum&rdquo;.</font></p>
+<p style="margin-bottom: 0.14in"><font size="4" style="font-size: 14pt">He
+was a computer engineer and programmer and he developed python
+language as a successor to ABC language which itself exhilarated by
+SETL.it is capable of exception handling and creating interactive
+interfaces with the help of Amoeba operating system.The utilization
+of python was started in December 1989.</font></p>
+<h1 class="western">Versioning of python</h1>
+<ul>
+	<li><p style="margin-bottom: 0.14in"><font size="4" style="font-size: 14pt">Python
+	1.0 was incorporated in January 1994</font></p>
+	<li><p style="margin-bottom: 0.14in"><font size="4" style="font-size: 14pt">Python
+	1.2 in April 10,1995</font></p>
+	<li><p style="margin-bottom: 0.14in"><font size="4" style="font-size: 14pt">Python
+	1.3 in October 12,1995</font></p>
+	<li><p style="margin-bottom: 0.14in"><font size="4" style="font-size: 14pt">Python
+	1.4 in October 25,1996</font></p>
+	<li><p style="margin-bottom: 0.14in"><font size="4" style="font-size: 14pt">Python
+	2.0 in October 6,2000</font></p>
+	<li><p style="margin-bottom: 0.14in"><font size="4" style="font-size: 14pt">Python
+	2.1 in April 15,2001</font></p>
+	<li><p style="margin-bottom: 0.14in"><font size="4" style="font-size: 14pt">Python
+	2.2 in December 21, 2001</font></p>
+	<li><p style="margin-bottom: 0.14in"><font size="4" style="font-size: 14pt">Python
+	2.3 in July 29, 2003</font></p>
+	<li><p style="margin-bottom: 0.14in"><font size="4" style="font-size: 14pt">Python
+	3.0 in December 3, 2008</font></p>
+	<li><p style="margin-bottom: 0.14in"><font size="4" style="font-size: 14pt">Python
+	3.1 in June 27, 2009</font></p>
+	<li><p style="margin-bottom: 0.14in"><font size="4" style="font-size: 14pt">Python
+	3.2 in February 20,2011</font></p>
+</ul>
+<h1 class="western">Usage of python language</h1>
+<ol>
+	<li><p style="margin-bottom: 0.14in"><font size="4" style="font-size: 14pt">It
+	is used to develop web applications and desktop applications by
+	applying scientific and mathematical logics.</font></p>
+	<li><p style="margin-bottom: 0.14in"><font size="4" style="font-size: 14pt">It
+	works as scripting language like Ruby, Perl and Php.</font></p>
+	<li><p style="margin-bottom: 0.14in"><font size="4" style="font-size: 14pt">It
+	can be easily interpreted in java. Everything than can be done by
+	java can also be performed by python.</font></p>
+	<li><p style="margin-bottom: 0.14in"><font size="4" style="font-size: 14pt">It
+	can simplify the complex software development.</font></p>
+	<li><p style="margin-bottom: 0.14in"><font size="4" style="font-size: 14pt">Its
+	syntax is easy to understand.</font></p>
+	<li><p style="margin-bottom: 0.14in"><font size="4" style="font-size: 14pt">It
+	is a very stable and Reliable language that cause least failures.</font></p>
+	<li><p style="margin-bottom: 0.14in"><font size="4" style="font-size: 14pt">It
+	is a high level language but on the same time it is imperative,
+	functional, procedural and reflective language.</font></p>
+	<li><p style="margin-bottom: 0.14in"><font size="4" style="font-size: 14pt">In
+	python you can write programmes that will provide functionality on a
+	wide scope by writing very less number of codes as you don&rsquo;t
+	need to define the type variable in it.</font></p>
+</ol>
+<h1 class="western">Future of Python language</h1>
+<p style="margin-bottom: 0.14in"><font size="4" style="font-size: 14pt">The
+future of python language is very bright as it is dominating the
+other actively used programming languages like java, C and C ++</font></p>
+<h1 class="western"><a name="_GoBack"></a>Is python good for
+apprentice programmers?</h1>
+<p style="margin-bottom: 0.14in"><font size="4" style="font-size: 14pt">Yes,
+python is very useful for beginners as it is such a versatile
+language that is easy to understand and easy to write. It provides
+you a great deal of reliability that helps the programmer to write
+the code with ease and to generate the magnificent applications as he
+don&rsquo;t need to waste his time by estimating the risk factors of
+failures of code and devise the ways to understand the complex
+syntax.</font></p>
+<h1 class="western">How many people are using Python</h1>
+<p style="margin-bottom: 0.14in"><font size="4" style="font-size: 14pt">Because
+of its greater features and the reliability, there are approximately
+ten thousand users are actively using this language and this count is
+increasing g day by day.</font></p>
+<h1 class="western">Base language of python</h1>
+<p style="margin-bottom: 0.14in"><font size="4" style="font-size: 14pt">Python
+is implemented and executed in C Python and it is written in C. The
+other implementations are as follows</font></p>
+<ul>
+	<li><p lang="en-US" style="margin-bottom: 0in; line-height: 100%"><font color="#000000"><font face="Calibri, serif"><font size="4" style="font-size: 14pt">IronPython&nbsp;(Python
+	running on .NET)</font></font></font></p>
+	<li><p lang="en-US" style="margin-bottom: 0in; line-height: 100%"><font color="#000000"><font face="Calibri, serif"><font size="4" style="font-size: 14pt">Jython&nbsp;(Python
+	running on the Java Virtual Machine)</font></font></font></p>
+	<li><p lang="en-US" style="margin-bottom: 0in; line-height: 100%"><font color="#000000"><font face="Calibri, serif"><font size="4" style="font-size: 14pt">PyPy&nbsp;(A
+	fast python implementation with a JIT compiler)</font></font></font></p>
+	<li><p lang="en-US" style="margin-bottom: 0in; line-height: 100%"><font color="#000000"><font face="Calibri, serif"><font size="4" style="font-size: 14pt">Stackless&nbsp;Python
+	(Branch of&nbsp;CPython&nbsp;supporting&nbsp;microthreads)</font></font></font></p>
+</ul>
+<h1 class="western"><font color="#000000"><font face="Calibri, serif"><font size="5" style="font-size: 20pt"><span lang="en-US"><b>What
+are</b></span></font></font></font><font color="#000000"> </font><font color="#000000"><font face="Calibri, serif"><font size="5" style="font-size: 20pt"><span lang="en-US"><b>the
+tenacities of Python?</b></span></font></font></font></h1>
+<ul>
+	<li><p lang="en-US" style="margin-bottom: 0in; line-height: 100%"><font color="#000000"><font face="Calibri, serif"><font size="4" style="font-size: 14pt">The
+	code is Readable and Maintainable and easy to understand.</font></font></font></p>
+	<li><p lang="en-US" style="margin-bottom: 0in; line-height: 100%"><font color="#000000"><font face="Calibri, serif"><font size="4" style="font-size: 14pt">It
+	provides Multiple Programming Paradigms</font></font></font></p>
+	<li><p lang="en-US" style="margin-bottom: 0in; line-height: 100%"><font color="#000000"><font face="Calibri, serif"><font size="4" style="font-size: 14pt">It
+	is Compatible with Major Platforms and Systems moreover it is medium
+	independent as well.</font></font></font></p>
+	<li><p lang="en-US" style="margin-bottom: 0in; line-height: 100%"><font color="#000000"><font face="Calibri, serif"><font size="4" style="font-size: 14pt">Robust
+	Standard Library</font></font></font></p>
+	<li><p lang="en-US" style="margin-bottom: 0in; line-height: 100%"><a name="fe13"></a>
+	<font color="#000000"><font face="Calibri, serif"><font size="4" style="font-size: 14pt">Extensive
+	Support Libraries</font></font></font></p>
+	<li><p lang="en-US" style="margin-bottom: 0in; line-height: 100%"><a name="ca4a"></a>
+	<font color="#000000"><font face="Calibri, serif"><font size="4" style="font-size: 14pt">Integration
+	Feature</font></font></font></p>
+	<li><p lang="en-US" style="margin-bottom: 0in; line-height: 100%"><a name="0685"></a>
+	<font color="#000000"><font face="Calibri, serif"><font size="4" style="font-size: 14pt">Improved
+	Programmer's Productivity</font></font></font></p>
+	<li><p lang="en-US" style="margin-bottom: 0in; line-height: 100%"><font color="#000000"><font face="Calibri, serif"><font size="4" style="font-size: 14pt">Many
+	Open Source Frameworks and Tools</font></font></font></p>
+	<li><p lang="en-US" style="margin-bottom: 0in; line-height: 100%"><font color="#000000"><font face="Calibri, serif"><font size="4" style="font-size: 14pt">Simplify
+	Complex Software Development</font></font></font></p>
+	<li><p lang="en-US" style="margin-bottom: 0in; line-height: 100%"><font color="#000000"><font face="Calibri, serif"><font size="4" style="font-size: 14pt">Adopt
+	Test Driven Development</font></font></font></p>
+</ul>
+<h1 class="western"><font size="5" style="font-size: 20pt"><b>What
+are the fragilities of Python?</b></font></h1>
+<p style="margin-bottom: 0.14in"><font size="4" style="font-size: 14pt">As
+python is easy to understand but as the programmer needs to execute
+its code in the interpreter, it cause a reduce in the speed of
+functionality and execution of the generated code.</font></p>
+<p style="margin-bottom: 0.14in"><font size="4" style="font-size: 14pt">Python
+can be too much accustomed to its features causing further
+complexities and fragilities in errors.</font></p>
+<p style="margin-bottom: 0.14in"><font size="4" style="font-size: 14pt">Python
+is slower than Java and C++</font></p>
+<p style="margin-bottom: 0.14in"><font size="4" style="font-size: 14pt">It
+is weak in mobile computing.</font></p>
+<h1 class="western">Why Python is chosen for the development of
+Vertex AMI?</h1>
+<p lang="en-US" style="margin-bottom: 0in; line-height: 100%"><font color="#000000"><font face="Calibri, serif"><font size="4" style="font-size: 14pt">Python
+is chosen because</font></font></font></p>
+<ul>
+	<li><p lang="en-US" style="margin-bottom: 0in; line-height: 100%"><font color="#000000"><font face="Calibri, serif"><font size="4" style="font-size: 14pt">The
+	task which was required to perform by our programmers was already
+	done and provided in python built in APIs. We have to write just
+	wrapper functions to use those libraries</font></font></font></p>
+	<li><p lang="en-US" style="margin-bottom: 0in; line-height: 100%"><font color="#000000"><font face="Calibri, serif"><font size="4" style="font-size: 14pt">Reduced
+	lines of codes leads to saving developing time.</font></font></font></p>
+	<li><p lang="en-US" style="margin-bottom: 0in; line-height: 100%"><font color="#000000"><font face="Calibri, serif"><font size="4" style="font-size: 14pt">Python
+	provides a strict mode of code indentation, by which not only code
+	is interpreted but it also makes code readable for human</font></font></font></p>
+	<li><p lang="en-US" style="margin-bottom: 0in; line-height: 100%"><font color="#000000"><font face="Calibri, serif"><font size="4" style="font-size: 14pt">Python
+	syntax is closer to natural language</font></font></font></p>
+	<li><p lang="en-US" style="margin-bottom: 0in; line-height: 100%"><font color="#000000"><font face="Calibri, serif"><font size="4" style="font-size: 14pt">Python
+	is emerging language in the Software Development, from Data Sciences
+	to Web API Development</font></font></font></p>
+	<li><p lang="en-US" style="margin-bottom: 0in; line-height: 100%"><font color="#000000"><font face="Calibri, serif"><font size="4" style="font-size: 14pt">Python's
+	Django Framework is most popular and rich framework which made our
+	work of Web Application development smooth</font></font></font></p>
+	<li><p lang="en-US" style="margin-bottom: 0in; line-height: 100%"><font color="#000000"><font face="Calibri, serif"><font size="4" style="font-size: 14pt">With
+	the selection of Python, we became able to achieve our milestones
+	regarding Quality, Time and Cost</font></font></font></p>
+	<li><p lang="en-US" style="margin-bottom: 0in; line-height: 100%"><font color="#000000"><font face="Calibri, serif"><font size="4" style="font-size: 14pt">Learning
+	curve of Python is very small</font></font></font></p>
+	<li><p lang="en-US" style="margin-bottom: 0in; line-height: 100%"><font color="#000000"><font face="Calibri, serif"><font size="4" style="font-size: 14pt">Any
+	developer having C, C++ or Java experience can start working on
+	Python in just few days</font></font></font></p>
+	<li><p lang="en-US" style="margin-bottom: 0in; line-height: 100%"><font color="#000000"><font face="Calibri, serif"><font size="4" style="font-size: 14pt">All
+	good things of all mature programming languages are accommodated in
+	this single programming language</font></font></font></p>
+</ul>
+<h1 class="western">Conclusion</h1>
+<p lang="en-US" style="margin-bottom: 0in; line-height: 100%"><a name="b0ac"></a>
+<font color="#000000"><font face="Calibri, serif"><font size="4" style="font-size: 14pt">Python
+is a robust and a versatile programming language and usage of its
+coding lines is very effortless. It is quite easy to maintain and
+ensure the accuracy of the functionality , and debugging can be done
+easily too. It has already gained importance across the globe as most
+emerging programming language and Google has announced python as its
+one of official programming languages.</font></font></font></p>
+<p style="margin-bottom: 0in; line-height: 100%"><br/>
+
+</p>
+<p style="margin-bottom: 0in; line-height: 100%"><a href="http://vertexsoft.net/"><span style="font-variant: normal"><font color="#954f72"><font face="Liberation Serif"><font size="4" style="font-size: 14pt"><span style="letter-spacing: normal"><span lang="en-US"><span style="font-style: normal"><u><span style="font-weight: normal">http://www.vertexsoft.net</span></u></span></span></span></font></font></font></span></a></p>
+<p style="margin-bottom: 0in; orphans: 2; widows: 2"><a name="_x0000_i1025"></a>
+<span style="font-variant: normal"><font color="#954f72"><span style="text-decoration: none"><span style="letter-spacing: normal"><a href="http://vertexsoft.net/">
+  <img src="{% static 'images/logo.png' %}" name="Image1" alt="logo" align="bottom" width="200" height="48" border="0"/>
+</a>
+<a href="http://vertexsoft.net/">
+</a></span></span></font></span>
+</p>
+<p style="margin-bottom: 0in; line-height: 100%"><br/>
+
+</p>
 </body>
-
 </html>
