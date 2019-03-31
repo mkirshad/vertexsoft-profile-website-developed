@@ -156,7 +156,8 @@ var uploadFileText = 'Drop your file here or click to select file';
 		nav: true,
 		navText: [],
 		smartSpeed: 800,
-		mouseDrag: true
+		mouseDrag: true,
+		transitionStyle : "backSlide"
 	});
 	
 	owl.on('changed.owl.carousel', function () {
