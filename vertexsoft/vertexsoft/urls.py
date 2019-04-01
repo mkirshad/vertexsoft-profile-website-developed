@@ -28,6 +28,7 @@ urlpatterns = [
 	url(r'^ror.xml', app.views.ror_xml, name='ror_xml'),
 	url(r'^urllist.txt', app.views.urllist_txt, name='urllist_txt'),
 	url(r'^sitemap.xml.gz', app.views.sitemap_xml_gz, name='sitemap_xml_gz'),
+	url(r'^blog/extracurricular/blog_labour_day', app.views.blog_labour_day, name='blog_labour_day'),
     url(r'^contact$', app.views.contact, name='contact'),
     url(r'^about$', app.views.about, name='about'),
     url(r'^login/$',

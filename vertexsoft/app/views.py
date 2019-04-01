@@ -172,3 +172,16 @@ def urllist_txt(request):
             'year':datetime.now().year,
         }
     )
+
+def blog_labour_day(request):
+    """Renders the home page."""
+    assert isinstance(request, HttpRequest)
+    return render(
+        request,
+        'app/blog_labour_day.html',
+        {
+            'title':'Home Page',
+            'year':datetime.now().year,
+        }
+    )
+
