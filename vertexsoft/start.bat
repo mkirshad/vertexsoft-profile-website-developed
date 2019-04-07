@@ -1,6 +1,6 @@
 \env\Scripts\activate.bat
 rem python manage.py migrate
-python manage.py runserver %COMPUTERNAME%:80 --insecure
+python manage.py runserver 192.168.8.10:80 --insecure
 rem start "" http://192.168.8.10:8000/mdc/start_tcp_service
 
 pause
